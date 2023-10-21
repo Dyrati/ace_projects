@@ -1,0 +1,19 @@
+; 1 file included
+; 23 lines
+; 0 labels
+; 0 equations
+
+; sample.asm
+
+00000000 .create "main.bin",0x02000000                                ; sample.asm line 5
+02000000 .org 0x02003610                                              ; sample.asm line 8
+02003610 .word 0x02002A00                                             ; sample.asm line 11
+02003614 .word 0x000004FF                                             ; sample.asm line 12
+02003618 .org 0x02002A00                                              ; sample.asm line 15
+02002A00    mov     r0,0x60                                           ; sample.asm line 16
+02002A02    lsl     r0,0x14                                           ; sample.asm line 17
+02002A04    mov     r1,0x00                                           ; sample.asm line 18
+02002A06    sub     r1,0x01                                           ; sample.asm line 19
+02002A08    str     r1,[r0]                                           ; sample.asm line 20
+02002A0A    bx      lr                                                ; sample.asm line 21
+02002A0C .close                                                       ; sample.asm line 23
