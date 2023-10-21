@@ -1,0 +1,24 @@
+; 1 file included
+; 31 lines
+; 0 labels
+; 0 equations
+
+; debug_password.asm
+
+00000000 .create ".\main.bin",0x02000000                              ; debug_password.asm line 3
+02000000 .org 0x0200A74A                                              ; debug_password.asm line 12
+0200A74A    asr     r0,r6,0x0C                                        ; debug_password.asm line 15
+0200A74C    lsl     r4,r0,0x10                                        ; debug_password.asm line 16
+0200A74E    add     r4,0x12                                           ; debug_password.asm line 17
+0200A750    sub     r2,r7,r0                                          ; debug_password.asm line 18
+0200A752    add     r0,0x36                                           ; debug_password.asm line 19
+0200A754    lsl     r3,r2,0x08                                        ; debug_password.asm line 20
+0200A756    add     r3,0x0F                                           ; debug_password.asm line 21
+0200A758    lsl     r4,r4,0x08                                        ; debug_password.asm line 22
+0200A75A    add     r4,0x04                                           ; debug_password.asm line 23
+0200A75C    str     r3,[r4,0x14]                                      ; debug_password.asm line 24
+0200A75E    add     r4,r3,r4                                          ; debug_password.asm line 25
+0200A760    str     r3,[r4,0x10]                                      ; debug_password.asm line 26
+0200A762    lsl     r4,r0,0x0C                                        ; debug_password.asm line 27
+0200A764    str     r3,[r4,0x14]                                      ; debug_password.asm line 28
+0200A766 .close                                                       ; debug_password.asm line 31
