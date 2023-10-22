@@ -19,15 +19,18 @@ A simple framework for writing and testing arbitrary code in emulator games.
 - Create an asm file to be run using **armips.exe**
 - Navigate to your folder in a terminal, and use the command `armips [main asm file name] -temp temp.txt` to assemble it
 - Optionally create a folder within the project folder named `saves`
-  - within this folder, include a savestate named `state` for each emulator that you want to auto-load a state when run (VBA-RR cannot auto-load)
+- within this folder, include a savestate named `state` for each emulator that you want to auto-load a state when run (VBA-RR cannot auto-load)
 - Optionally add a file named `init.lua` for any code you want to run each time your project is run
-- Type `run("project_name")` in the lua console/input box.  You don't have to restart the script to run your code.
+- Type `run("project_name")` in the lua console/input box.  You don't have to restart the script to run your code. This will automatically:
+  - run `init.lua` if it exists
+  - load the savestate `state.ss0` or `state.State` or `state.sgm` if available from the `saves` folder
+  - read the `temp` file to figure out what files were created and where their data should go
 - See the `sample` project for a simple example.  You can also copy paste it and rename the folder to make a new project.
 
-- ### Requirements and Restrictions
-  - You must have a copy of **armips.exe** in your project folder, or in your PATH
-  - You must use the `-temp` parameter for the lua script to work; it parses the file to determine which files to open and where to write the output
-  - You must use the name `temp` for your temp file, or set `paths.temp` in `init.lua`
-  - You must use the name `state` for your auto-loaded savestate files, or set `paths.state` in `init.lua`
-  - Do NOT use the shorthand of `add rx, ry` when both `rx` and `ry` are less than 8.  Instead use the equivalent `add rx, rx, ry`, because the current ARMIPS assembler assembles the former into an illegal opcode.  The shorthand also has issues with CPU flag updating.
-  - Your program will only be able to write data to RAM regions `(02000000-07FFFFFF)`
+### Requirements, Restrictions, and Notes
+- You must have a copy of **armips.exe** in your project folder, or in your PATH
+- You must use the `-temp` parameter for the lua script to work
+- You must use the name `temp` for your temp file, or set `paths.temp` in `init.lua`
+- You must use the name `state` for your auto-loaded savestate files, or set `paths.state` in `init.lua`
+- Do NOT use the shorthand of `add rx, ry` when both `rx` and `ry` are less than 8.  Instead use the equivalent `add rx, rx, ry`, because the current ARMIPS assembler assembles the former into an illegal opcode.  The shorthand also has issues with CPU flag updating.
+- Your program will only be able to write data to RAM regions `(02000000-07FFFFFF)`
