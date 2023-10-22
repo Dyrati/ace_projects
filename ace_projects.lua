@@ -162,15 +162,16 @@ paths = {
     end
 
     function run(package_name)
-        local init_file = filecheck(pathjoin(paths.folder, package_name, add_extension(paths.init, "lua")))
+        local package_path = pathjoin(paths.folder, "Projects", package_name)
+        local init_file = filecheck(pathjoin(package_path, add_extension(paths.init, "lua")))
         if init_file then dofile(init_file) end
         local save_ext = 
             emulator == "mgba" and "ss0" or
             emulator == "bizhawk" and "State" or 
             emulator == "vba" and "sgm"
-        local save = check_extensions(pathjoin(paths.folder, package_name, paths.save), save_ext)
+        local save = check_extensions(pathjoin(package_path, paths.save), save_ext)
         if filecheck(save) and load then load(save) end
-        local temp = check_extensions(pathjoin(paths.folder, package_name, paths.temp), "txt")
+        local temp = check_extensions(pathjoin(package_path, paths.temp), "txt")
         load_armips_output(temp)
     end
 
