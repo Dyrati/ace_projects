@@ -1,7 +1,6 @@
 paths = {
     folder = nil,
     save = "saves/state",
-    main = "main",
     temp = "temp",
     init = "init",
 }
@@ -170,7 +169,7 @@ paths = {
             emulator == "bizhawk" and "State" or 
             emulator == "vba" and "sgm"
         local save = check_extensions(pathjoin(package_path, paths.save), save_ext)
-        if filecheck(save) and load then load(save) end
+        if save and load then load(save) end
         local temp = check_extensions(pathjoin(package_path, paths.temp), "txt")
         load_armips_output(temp)
     end
