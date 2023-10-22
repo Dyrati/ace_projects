@@ -2,7 +2,7 @@ ACE is now a reality in GS2!!
 
 How it was discovered:
 
-Anywhere in the game, you can use cyclone to gain height so long as there is a cyclone event (`0xEB` tile) at your position in the 3rd layer (`64` tiles below you, or `0x8000` bytes).  In Air's Rock, floating platforms update the third layer when stepped on, to change their graphics.  The address updated is based on your position, eg. if you move right one tile, the updated address moves right one tile.  If you move down, the updated address moves down with you.
+Anywhere in the game, in towns/dungeons, you can use cyclone to gain height so long as there is a cyclone event (`0xEB` tile) at your position in the 3rd layer (`64` tiles below you, or `0x8000` bytes).  In Air's Rock, floating platforms update the third layer when stepped on, to change their graphics.  The address updated is based on your position, eg. if you move right one tile, the updated address moves right one tile.  If you move down, the updated address moves down with you.
 
 Interestingly, if you increase your z coordinate, the updated address moves up as if you had moved up one tile in the y direction (up in the y direction is towards negative y).  However, the floating platform only cares about your x and y coordinate to determine if you're standing on it or not.  So by changing your z coordinate, you can move the updated address up and down, practically arbitrarily.
 
@@ -10,7 +10,7 @@ The x-coordinate of the updated address is a bit more restricted, but there are 
 
 The floating platforms only write to the last 11 bits of 32-bit aligned memory addresses.  The remaining 21 bits are unchanged, unlike in Tret where the remaining bits were set to 0.
 
-**Plexa** has [a great video](https://www.youtube.com/watch?v=nqBgfYE5RrI&t=32s&pp=ygUgdGwgcGxleGEgYXJiaXRyYXJ5IG1lbW9yeSB3cml0ZXM%3D) explaining what I've mentioned so far, and **Teawater** figured it all out.  Awesome stuff.
+**Plexa** has [a great video](https://www.youtube.com/watch?v=nqBgfYE5RrI&t=32s&pp=ygUgdGwgcGxleGEgYXJiaXRyYXJ5IG1lbW9yeSB3cml0ZXM%3D) explaining what I've mentioned so far, and **Teawater** figured all that out.  Awesome stuff.
 
 When loading a map, various map functions are copied from ROM into EWRAM, from `02008000` to `0200E000`.  That region is within our capabilities to edit.  Some of these functions are only called when the map is loaded, but others can be triggered by doing things, and some are called every frame.  If we can just get the CPU to branch to a region of memory that we have sufficient control over, we have ACE.  Things like names, inventories, stats, and coins are prime targets.  However, all of that easy stuff exists in a very narrow region of memory: `02000000-02001000`
 
