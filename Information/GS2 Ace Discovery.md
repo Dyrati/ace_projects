@@ -1,6 +1,8 @@
 ACE is now a reality in GS2!!
 
-How it was discovered:
+ACE stands for Arbitrary Code Execution.  When playing a video game, you are the user, and the game's code determines everything that the user can do.  But sometimes, with just the right glitches, the user can acquire the ability to write and run game code while playing the game.  The user obtains total control of the RAM, like Neo in the Matrix.  Once obtained, the user has the power to write entire games into the game.
+
+How it was discovered for GS2:
 
 Anywhere in the game, in towns/dungeons, you can use cyclone to gain height so long as there is a cyclone event (`0xEB` tile) at your position in the 3rd layer (`64` tiles below you, or `0x8000` bytes).  In Air's Rock, floating platforms update the third layer when stepped on, to change their graphics.  The address updated is based on your position, eg. if you move right one tile, the updated address moves right one tile.  If you move down, the updated address moves down with you.
 
@@ -32,4 +34,4 @@ When you enter a map, the RAM gets cleared, up to a point.  For Air's Rock, that
 
 So at this point, we have a very large region of memory `(02038F00-02040000)` that we have control over.  Again, none of the bl instructions reach it, but a small fraction of them get just close enough to skip over the last clump of impassable garbage data before it.  A small fraction of those are accessible from Air's Rock functions that we can trigger, and a small fraction of those (only one left at this point) have consistent floating platforms that can edit them within a reasonable number of cyclones.
 
-Once the CPU reaches the stale password data, it can be instructed to activate debug mode, and execute from the flags.  Thus, we have ACE.
+Once the CPU reaches the stale password data, it can be instructed to activate debug mode, and execute from the flags.  With debug mode, you can modify the flags without restriction, but the flag region is only 0x200 bytes.  By writing a small function there that copies data from the flags to anywhere in RAM, we eliminate the size limit, and obtain true Arbitrary Code Execution.
