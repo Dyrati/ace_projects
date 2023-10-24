@@ -4,9 +4,11 @@ ACE stands for Arbitrary Code Execution.  When playing a video game, you are the
 
 How it was discovered for GS2:
 
-Anywhere in the game, in towns/dungeons, you can use cyclone to gain height so long as there is a cyclone event (`0xEB` tile) at your position in the 3rd layer (`64` tiles below you, or `0x8000` bytes).  In Air's Rock, floating platforms update the third layer when stepped on, to change their graphics.  The address updated is based on your position, eg. if you move right one tile, the updated address moves right one tile.  If you move down, the updated address moves down with you.
+Anywhere in the game, in towns/dungeons, you can use cyclone to gain height so long as there is a cyclone event (`0xEB` tile) at your position in the 3rd layer (`64` tiles below you, or `0x8000` bytes).  This allows you to control your z coordinate when out of bounds.
 
-Interestingly, if you increase your z coordinate, the updated address moves up as if you had moved up one tile in the y direction (up in the y direction is towards negative y).  However, the floating platform only cares about your x and y coordinate to determine if you're standing on it or not.  So by changing your z coordinate, you can move the updated address up and down, practically arbitrarily.
+In Air's Rock, floating platforms update the third layer when stepped on, to change their graphics.  The address updated is based on your position, eg. if you move right one tile, the updated address moves right one tile.  If you move down, the updated address moves down with you.
+
+Interestingly, if you increase your z coordinate by 1 tile, the updated address moves up as if you had moved up one tile in the y direction (up in the y direction is towards negative y).  However, the floating platform only cares about your x and y coordinate to determine if you're standing on it or not.  So by changing your z coordinate, you can move the updated address up and down, practically arbitrarily.
 
 The x-coordinate of the updated address is a bit more restricted, but there are still several options.  Using leftover data from your last enemy encounter, you can get floating platform tiles at several different x coordinates.  Combining that with using cyclone out of bounds gets you nearly arbitrary memory writes (to EWRAM region, aka `02000000-02040000`).
 

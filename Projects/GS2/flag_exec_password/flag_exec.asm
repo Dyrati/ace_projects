@@ -20,7 +20,7 @@
     sub r7, 3
     lsl r1, r2, 0x14
     lsl r0, r7, 8
-    add r0, 0xF // store 0xBD0F (pop {r0-r3,pc}) in r3
+    add r0, 0xF // store 0xBD0F (pop {r0-r3,pc}) in r0
     add r3, 0x30
     add r3, 0x63
     str r0, [r3, 0x30] // write r0 at 020000C0 (flag 400)

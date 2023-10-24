@@ -15,13 +15,13 @@ paths = {
     assert(emulator, "unrecognized emulator")
 
     if emulator == "mgba" then
-        read8 = function(addr) emu:read8(addr) end
-        read16 = function(addr) emu:read16(addr) end
-        read32 = function(addr) emu:read32(addr) end
+        read8 = function(addr) return emu:read8(addr) end
+        read16 = function(addr) return emu:read16(addr) end
+        read32 = function(addr) return emu:read32(addr) end
         write8 = function(addr, value) emu:write8(addr, value) end
         write16 = function(addr, value) emu:write16(addr, value) end
         write32 = function(addr, value) emu:write32(addr, value) end
-        load = function(file) emu:loadStateFile(file) end
+        load_state_file = function(file) emu:loadStateFile(file) end
         print = function(...)
             local args = table.pack(...)
             local s = {}
@@ -40,7 +40,7 @@ paths = {
         write16 = memory.write_u16_le
         read32 = memory.read_u32_le
         write32 = memory.write_u32_le
-        load = function(file) savestate.load(file) end
+        load_state_file = function(file) savestate.load(file) end
         if not paths.folder then
             local OS_name = os.getenv("OS")
             if OS_name and OS_name:match("Windows") then
@@ -92,16 +92,13 @@ paths = {
         end
     end
 
-    function add_extension(filename, ext)
-        if not filename:match(ext.."$") then
-            filename = filename.."."..ext
-        end
-        return filename
-    end
-
     function pathjoin(...)
+        local arg = {...}
+        for i=#arg,1,-1 do
+            if arg[i] == "" then table.remove(arg, i) end
+        end
         local sep = package.config:match("[^\n]*")
-        return table.concat({...}, sep)
+        return table.concat(arg, sep)
     end
 
     function filecheck(filename, mode)
@@ -113,8 +110,25 @@ paths = {
         end
     end
 
+    function read_ascii(addr, length)
+        local s = ""
+        for i=addr, addr+length-1 do
+            s = s..string.char(read8(i))
+        end
+        return s
+    end
+
+    function rom_header_info()
+        return {
+            game_title = read_ascii(0x080000A0, 12),
+            game_code = read_ascii(0x080000AC, 4),
+            maker_code = read_ascii(0x080000B0, 2),
+        }
+    end
+
     function load_armips_output(tempfile) -- Use the armips tempfile to determine what files to open and where to write data
         local header = 0
+        local data
         local prevpos, pos
         local position_setters = set("open", "create", "headersize", "org", "align", "skip")
         for line in io.lines(tempfile) do
@@ -161,16 +175,28 @@ paths = {
     end
 
     function run(package_name)
-        local package_path = pathjoin(paths.folder, "Projects", package_name)
-        local init_file = filecheck(pathjoin(package_path, add_extension(paths.init, "lua")))
-        if init_file then dofile(init_file) end
+        local projects = pathjoin(paths.folder, "Projects")
+        local game_title = rom_header_info().game_title
+        local game_folder = 
+            game_title == "Golden_Sun_A" and "GS1" or
+            game_title == "GOLDEN_SUN_B" and "GS2" or 
+            ""
+        local package_path = pathjoin(projects, game_folder, package_name)
+        local init_file = check_extensions(pathjoin(package_path, paths.init), "lua")
+        if not init_file then
+            package_path = pathjoin(projects, package_name)
+            init_file = check_extensions(pathjoin(package_path, paths.init), "lua")
+        end
+        assert(init_file, ("could not find init.lua in '%s'"):format(package_name))
+        dofile(init_file)
         local save_ext = 
             emulator == "mgba" and "ss0" or
             emulator == "bizhawk" and "State" or 
             emulator == "vba" and "sgm"
         local save = check_extensions(pathjoin(package_path, paths.save), save_ext)
-        if save and load then load(save) end
+        if save and load_state_file then load_state_file(save) end
         local temp = check_extensions(pathjoin(package_path, paths.temp), "txt")
+        assert(temp, "could not find "..temp)
         load_armips_output(temp)
     end
 
@@ -180,7 +206,7 @@ paths = {
 
     if emulator == "vba" then
         require("widgets")
-        interpreter = widgets.Interpreter{}
+        interpreter = widgets.Interpreter{x=119}
         while true do
             emu.frameadvance()
         end

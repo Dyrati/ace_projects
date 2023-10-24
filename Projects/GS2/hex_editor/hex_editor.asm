@@ -96,7 +96,7 @@
     @edit_menu: // inputs, *editor_attrs
         push {r0-r7,lr}
         mov r5, r1
-        mov r1, 0x17
+        mov r1, 8
         bl  @check_opposing_buttons
         cmp r1, 0
         beq @@return
@@ -177,10 +177,12 @@
         @@return:
             pop {r0-r7,pc}
 
-    @check_opposing_buttons: // input, shift; returns (in r1) -1 if first input, 1 if second input, and 0 if neither or both are held
-        push {r0,lr}
-        lsl r0, r1
+    @check_opposing_buttons: // input, bitpos; returns (in r1) -1 if first input, 1 if second input, and 0 if neither or both are held
+        push {r0,r2,lr}
+        mov r2, 0x1F
+        sub r2, r2, r1
         mov r1, 0
+        lsl r0, r2
         bcc @@up+2
         @@up:
             sub r1, 1
@@ -188,7 +190,7 @@
         bcc @@down+2
         @@down:
             add r1, 1
-        pop {r0,pc}
+        pop {r0,r2,pc}
 
     @move_cursor: // *panel, input, *editor_attrs
         push {r0-r6,lr}
@@ -201,7 +203,7 @@
         ldrb r2, [r6, 4] // cursor_x
         ldrb r3, [r6, 5] // cursor_y
         @@UpDown:
-            mov r1, 0x19
+            mov r1, 6
             bl @check_opposing_buttons
             cmp r1, 0
             beq @@LeftRight 
@@ -215,7 +217,7 @@
                 mov r3, 0
             strb r3, [r6, 5]
         @@LeftRight:
-            mov r1, 0x1B
+            mov r1, 4
             bl @check_opposing_buttons
             cmp r1, 0
             beq @@return

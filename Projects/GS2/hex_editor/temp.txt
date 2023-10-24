@@ -1,5 +1,5 @@
 ; 4 files included
-; 426 lines
+; 428 lines
 ; 54 labels
 ; 2 equations
 
@@ -61,7 +61,7 @@
 02002A0A    bne     0x2002AA8                                         ; .\hex_editor.asm line 10
 02002A0C    mov     r0,sp                                             ; .\hex_editor.asm line 11
 02002A0E    mov     r1,0x20                                           ; .\hex_editor.asm line 12
-02002A10    bl      0x2002C52                                         ; .\hex_editor.asm line 13
+02002A10    bl      0x2002C56                                         ; .\hex_editor.asm line 13
 02002A14    ldr     r6,=0x03001150                                    ; .\hex_editor.asm line 14
 02002A16    ldr     r0,[r6]                                           ; .\hex_editor.asm line 15
 02002A18    mov     r1,0x81                                           ; .\hex_editor.asm line 16
@@ -71,14 +71,14 @@
 02002A20    str     r0,[r13,0x14]                                     ; .\hex_editor.asm line 20
 02002A22    add     r1,r13,0x04                                       ; .\hex_editor.asm line 21
 02002A24    add     r0,r13,0x08                                       ; .\hex_editor.asm line 22
-02002A26    bl      0x2002C84                                         ; .\hex_editor.asm line 23
+02002A26    bl      0x2002C88                                         ; .\hex_editor.asm line 23
 02002A2A    mov     r0,0x02                                           ; .\hex_editor.asm line 24
 02002A2C    str     r0,[r13,0x00]                                     ; .\hex_editor.asm line 25
 02002A2E    mov     r0,0x03                                           ; .\hex_editor.asm line 26
 02002A30    mov     r1,0x00                                           ; .\hex_editor.asm line 27
 02002A32    mov     r2,0x19                                           ; .\hex_editor.asm line 28
 02002A34    mov     r3,0x14                                           ; .\hex_editor.asm line 29
-02002A36    bl      0x2002C64                                         ; .\hex_editor.asm line 30
+02002A36    bl      0x2002C68                                         ; .\hex_editor.asm line 30
 02002A3A    str     r0,[r13,0x1C]                                     ; .\hex_editor.asm line 31
 02002A3C @@menu:                                                      ; .\hex_editor.asm line 32
 02002A3C    ldr     r0,[r6]                                           ; .\hex_editor.asm line 33
@@ -104,32 +104,32 @@
 02002A62    mov     r1,r0                                             ; .\hex_editor.asm line 55
 02002A64    ldr     r0,[r13,0x1C]                                     ; .\hex_editor.asm line 56
 02002A66    mov     r2,r5                                             ; .\hex_editor.asm line 57
-02002A68    bl      0x2002B62                                         ; .\hex_editor.asm line 58
+02002A68    bl      0x2002B66                                         ; .\hex_editor.asm line 58
 02002A6C    mov     r1,r5                                             ; .\hex_editor.asm line 59
 02002A6E    add     r2,r13,0x08                                       ; .\hex_editor.asm line 60
-02002A70    bl      0x2002BA6                                         ; .\hex_editor.asm line 61
+02002A70    bl      0x2002BAA                                         ; .\hex_editor.asm line 61
 02002A74    ldr     r1,[r5]                                           ; .\hex_editor.asm line 62
 02002A76    ldrb    r2,[r5,0x06]                                      ; .\hex_editor.asm line 63
-02002A78    bl      0x2002BC8                                         ; .\hex_editor.asm line 64
+02002A78    bl      0x2002BCC                                         ; .\hex_editor.asm line 64
 02002A7C    mov     r0,0x01                                           ; .\hex_editor.asm line 65
 02002A7E    strb    r0,[r5,0x07]                                      ; .\hex_editor.asm line 66
 02002A80    mov     r1,0x00                                           ; .\hex_editor.asm line 67
 02002A82    str     r1,[r6]                                           ; .\hex_editor.asm line 68
 02002A84    ldr     r4,=0x02030F00                                    ; .\hex_editor.asm line 69
 02002A86    strb    r0,[r4,0x03]                                      ; .\hex_editor.asm line 70
-02002A88    bl      0x2002C5C                                         ; .\hex_editor.asm line 71
+02002A88    bl      0x2002C60                                         ; .\hex_editor.asm line 71
 02002A8C    b       0x2002A3C                                         ; .\hex_editor.asm line 72
 02002A8E @@exit:                                                      ; .\hex_editor.asm line 73
 02002A8E    ldr     r0,[r13,0x04]                                     ; .\hex_editor.asm line 74
-02002A90    bl      0x2002C94                                         ; .\hex_editor.asm line 75
+02002A90    bl      0x2002C98                                         ; .\hex_editor.asm line 75
 02002A94    mov     r0,0x00                                           ; .\hex_editor.asm line 76
 02002A96    strb    r0,[r5,0x07]                                      ; .\hex_editor.asm line 77
 02002A98    ldr     r0,=0x0203015A                                    ; .\hex_editor.asm line 78
 02002A9A    mov     r1,0x16                                           ; .\hex_editor.asm line 79
-02002A9C    bl      0x2002C52                                         ; .\hex_editor.asm line 80
+02002A9C    bl      0x2002C56                                         ; .\hex_editor.asm line 80
 02002AA0    ldr     r0,[r13,0x1C]                                     ; .\hex_editor.asm line 81
 02002AA2    mov     r1,0x02                                           ; .\hex_editor.asm line 82
-02002AA4    bl      0x2002C74                                         ; .\hex_editor.asm line 83
+02002AA4    bl      0x2002C78                                         ; .\hex_editor.asm line 83
 02002AA8 @@return:                                                    ; .\hex_editor.asm line 84
 02002AA8    add     r13,0x20                                          ; .\hex_editor.asm line 85
 02002AAA    pop     r5-r7,pc                                          ; .\hex_editor.asm line 86
@@ -146,7 +146,7 @@
 02002AC0 @edit_menu:                                                  ; .\hex_editor.asm line 96
 02002AC0    push    r0-r7,lr                                          ; .\hex_editor.asm line 97
 02002AC2    mov     r5,r1                                             ; .\hex_editor.asm line 98
-02002AC4    mov     r1,0x17                                           ; .\hex_editor.asm line 99
+02002AC4    mov     r1,0x08                                           ; .\hex_editor.asm line 99
 02002AC6    bl      0x2002B50                                         ; .\hex_editor.asm line 100
 02002ACA    cmp     r1,0x00                                           ; .\hex_editor.asm line 101
 02002ACC    beq     0x2002B4E                                         ; .\hex_editor.asm line 102
@@ -227,189 +227,191 @@
 02002B4E @@return:                                                    ; .\hex_editor.asm line 177
 02002B4E    pop     r0-r7,pc                                          ; .\hex_editor.asm line 178
 02002B50 @check_opposing_buttons:                                     ; .\hex_editor.asm line 180
-02002B50    push    r0,lr                                             ; .\hex_editor.asm line 181
-02002B52    lsl     r0,r1                                             ; .\hex_editor.asm line 182
-02002B54    mov     r1,0x00                                           ; .\hex_editor.asm line 183
-02002B56    bcc     0x2002B5A                                         ; .\hex_editor.asm line 184
-02002B58 @@up:                                                        ; .\hex_editor.asm line 185
-02002B58    sub     r1,0x01                                           ; .\hex_editor.asm line 186
-02002B5A    lsl     r0,0x01                                           ; .\hex_editor.asm line 187
-02002B5C    bcc     0x2002B60                                         ; .\hex_editor.asm line 188
-02002B5E @@down:                                                      ; .\hex_editor.asm line 189
-02002B5E    add     r1,0x01                                           ; .\hex_editor.asm line 190
-02002B60    pop     r0,pc                                             ; .\hex_editor.asm line 191
-02002B62 @move_cursor:                                                ; .\hex_editor.asm line 193
-02002B62    push    r0-r6,lr                                          ; .\hex_editor.asm line 194
-02002B64    ldrh    r4,[r0,0x08]                                      ; .\hex_editor.asm line 195
-02002B66    ldrh    r5,[r0,0x0A]                                      ; .\hex_editor.asm line 196
-02002B68    sub     r4,0x03                                           ; .\hex_editor.asm line 197
-02002B6A    sub     r5,0x03                                           ; .\hex_editor.asm line 198
-02002B6C    mov     r0,r1                                             ; .\hex_editor.asm line 199
-02002B6E    mov     r6,r2                                             ; .\hex_editor.asm line 200
-02002B70    ldrb    r2,[r6,0x04]                                      ; .\hex_editor.asm line 201
-02002B72    ldrb    r3,[r6,0x05]                                      ; .\hex_editor.asm line 202
-02002B74 @@updown:                                                    ; .\hex_editor.asm line 203
-02002B74    mov     r1,0x19                                           ; .\hex_editor.asm line 204
-02002B76    bl      0x2002B50                                         ; .\hex_editor.asm line 205
-02002B7A    cmp     r1,0x00                                           ; .\hex_editor.asm line 206
-02002B7C    beq     0x2002B8C                                         ; .\hex_editor.asm line 207
-02002B7E    sub     r3,r3,r1                                          ; .\hex_editor.asm line 208
-02002B80    bge     0x2002B84                                         ; .\hex_editor.asm line 209
-02002B82 @@topwrap:                                                   ; .\hex_editor.asm line 210
-02002B82    mov     r3,r5                                             ; .\hex_editor.asm line 211
-02002B84    cmp     r3,r5                                             ; .\hex_editor.asm line 212
-02002B86    ble     0x2002B8A                                         ; .\hex_editor.asm line 213
-02002B88 @@botwrap:                                                   ; .\hex_editor.asm line 214
-02002B88    mov     r3,0x00                                           ; .\hex_editor.asm line 215
-02002B8A    strb    r3,[r6,0x05]                                      ; .\hex_editor.asm line 216
-02002B8C @@leftright:                                                 ; .\hex_editor.asm line 217
-02002B8C    mov     r1,0x1B                                           ; .\hex_editor.asm line 218
-02002B8E    bl      0x2002B50                                         ; .\hex_editor.asm line 219
-02002B92    cmp     r1,0x00                                           ; .\hex_editor.asm line 220
-02002B94    beq     0x2002BA4                                         ; .\hex_editor.asm line 221
-02002B96    add     r2,r2,r1                                          ; .\hex_editor.asm line 222
-02002B98    bge     0x2002B9C                                         ; .\hex_editor.asm line 223
-02002B9A @@leftwrap:                                                  ; .\hex_editor.asm line 224
-02002B9A    mov     r2,r4                                             ; .\hex_editor.asm line 225
-02002B9C    cmp     r2,r4                                             ; .\hex_editor.asm line 226
-02002B9E    ble     0x2002BA2                                         ; .\hex_editor.asm line 227
-02002BA0 @@rightwrap:                                                 ; .\hex_editor.asm line 228
-02002BA0    mov     r2,0x00                                           ; .\hex_editor.asm line 229
-02002BA2    strb    r2,[r6,0x04]                                      ; .\hex_editor.asm line 230
-02002BA4 @@return:                                                    ; .\hex_editor.asm line 231
-02002BA4    pop     r0-r6,pc                                          ; .\hex_editor.asm line 232
-02002BA6 @draw_cursor_to_panel:                                       ; .\hex_editor.asm line 234
-02002BA6    push    r0-r4,lr                                          ; .\hex_editor.asm line 235
-02002BA8    mov     r4,r2                                             ; .\hex_editor.asm line 236
-02002BAA    ldrb    r2,[r1,0x04]                                      ; .\hex_editor.asm line 237
-02002BAC    ldrb    r3,[r1,0x05]                                      ; .\hex_editor.asm line 238
-02002BAE    lsl     r1,r2,0x03                                        ; .\hex_editor.asm line 239
-02002BB0    ldr     r2,[r0,0x0C]                                      ; .\hex_editor.asm line 240
-02002BB2    lsl     r2,0x03                                           ; .\hex_editor.asm line 241
-02002BB4    add     r1,r1,r2                                          ; .\hex_editor.asm line 242
-02002BB6    lsl     r2,r3,0x03                                        ; .\hex_editor.asm line 243
-02002BB8    ldr     r3,[r0,0x10]                                      ; .\hex_editor.asm line 244
-02002BBA    lsl     r3,0x03                                           ; .\hex_editor.asm line 245
-02002BBC    add     r2,r2,r3                                          ; .\hex_editor.asm line 246
-02002BBE    sub     r2,0x04                                           ; .\hex_editor.asm line 247
-02002BC0    mov     r0,r4                                             ; .\hex_editor.asm line 248
-02002BC2    bl      0x2002C8C                                         ; .\hex_editor.asm line 249
-02002BC6    pop     r0-r4,pc                                          ; .\hex_editor.asm line 250
-02002BC8 @draw_mem_viewer:                                            ; .\hex_editor.asm line 252
-02002BC8    push    r0-r7,lr                                          ; .\hex_editor.asm line 253
-02002BCA    add     r13,0xFC                                          ; .\hex_editor.asm line 254
-02002BCC    mov     r5,r1                                             ; .\hex_editor.asm line 255
-02002BCE    mov     r6,r2                                             ; .\hex_editor.asm line 256
-02002BD0    push    r0-r3                                             ; .\hex_editor.asm line 257
-02002BD2    bl      0x2002C6C                                         ; .\hex_editor.asm line 258
-02002BD6    pop     r0-r3                                             ; .\hex_editor.asm line 259
-02002BD8    mov     r4,0x08                                           ; .\hex_editor.asm line 260
-02002BDA    str     r4,[r13]                                          ; .\hex_editor.asm line 261
-02002BDC    mov     r2,0x00                                           ; .\hex_editor.asm line 262
-02002BDE    mov     r3,0x00                                           ; .\hex_editor.asm line 263
-02002BE0    bl      0x2002C18                                         ; .\hex_editor.asm line 264
-02002BE4    mov     r4,0x01                                           ; .\hex_editor.asm line 265
-02002BE6    str     r4,[r13]                                          ; .\hex_editor.asm line 266
-02002BE8    mov     r1,r6                                             ; .\hex_editor.asm line 267
-02002BEA    mov     r2,0x09                                           ; .\hex_editor.asm line 268
-02002BEC    bl      0x2002C18                                         ; .\hex_editor.asm line 269
-02002BF0    mov     r2,0x00                                           ; .\hex_editor.asm line 270
-02002BF2    mov     r3,0x02                                           ; .\hex_editor.asm line 271
-02002BF4    lsl     r4,r6,0x01                                        ; .\hex_editor.asm line 272
-02002BF6    str     r4,[r13]                                          ; .\hex_editor.asm line 273
-02002BF8    add     r4,0x01                                           ; .\hex_editor.asm line 274
-02002BFA    mov     r7,0x07                                           ; .\hex_editor.asm line 275
-02002BFC @@loop:                                                      ; .\hex_editor.asm line 276
-02002BFC    ldr     r1,[r5]                                           ; .\hex_editor.asm line 277
-02002BFE    bl      0x2002C18                                         ; .\hex_editor.asm line 278
-02002C02    add     r5,r5,r6                                          ; .\hex_editor.asm line 279
-02002C04    add     r2,r2,r4                                          ; .\hex_editor.asm line 280
-02002C06    sub     r7,r7,r6                                          ; .\hex_editor.asm line 281
-02002C08    bpl     0x2002BFC                                         ; .\hex_editor.asm line 282
-02002C0A    mov     r7,0x07                                           ; .\hex_editor.asm line 283
-02002C0C    mov     r2,0x00                                           ; .\hex_editor.asm line 284
-02002C0E    add     r3,0x01                                           ; .\hex_editor.asm line 285
-02002C10    cmp     r3,0x12                                           ; .\hex_editor.asm line 286
-02002C12    bcc     0x2002BFC                                         ; .\hex_editor.asm line 287
-02002C14    add     r13,0x04                                          ; .\hex_editor.asm line 288
-02002C16    pop     r0-r7,pc                                          ; .\hex_editor.asm line 289
-02002C18 @draw_hex_value:                                             ; .\hex_editor.asm line 291
-02002C18    push    r0-r6,lr                                          ; .\hex_editor.asm line 292
-02002C1A    ldr     r4,[r13,0x20]                                     ; .\hex_editor.asm line 293
-02002C1C    mov     r5,r1                                             ; .\hex_editor.asm line 294
-02002C1E    sub     r4,0x01                                           ; .\hex_editor.asm line 295
-02002C20    lsl     r4,0x02                                           ; .\hex_editor.asm line 296
-02002C22    mov     r6,0x0F                                           ; .\hex_editor.asm line 297
-02002C24 @@loop:                                                      ; .\hex_editor.asm line 298
-02002C24    mov     r1,r5                                             ; .\hex_editor.asm line 299
-02002C26    lsr     r1,r4                                             ; .\hex_editor.asm line 300
-02002C28    and     r1,r6                                             ; .\hex_editor.asm line 301
-02002C2A    bl      0x2002C36                                         ; .\hex_editor.asm line 302
-02002C2E    add     r2,0x01                                           ; .\hex_editor.asm line 303
-02002C30    sub     r4,0x04                                           ; .\hex_editor.asm line 304
-02002C32    bpl     0x2002C24                                         ; .\hex_editor.asm line 305
-02002C34    pop     r0-r6,pc                                          ; .\hex_editor.asm line 306
-02002C36 @draw_hex_digit:                                             ; .\hex_editor.asm line 308
-02002C36    push    r0-r7,lr                                          ; .\hex_editor.asm line 309
-02002C38    add     r13,0xFC                                          ; .\hex_editor.asm line 310
-02002C3A    cmp     r1,0x10                                           ; .\hex_editor.asm line 311
-02002C3C    bcs     0x2002C4E                                         ; .\hex_editor.asm line 312
-02002C3E    cmp     r1,0x0A                                           ; .\hex_editor.asm line 313
-02002C40    bcc     0x2002C44                                         ; .\hex_editor.asm line 314
-02002C42    add     r1,0x07                                           ; .\hex_editor.asm line 315
-02002C44 @@low:                                                       ; .\hex_editor.asm line 316
-02002C44    add     r1,0x30                                           ; .\hex_editor.asm line 317
-02002C46    mov     r4,0x02                                           ; .\hex_editor.asm line 318
-02002C48    str     r4,[r13,0x00]                                     ; .\hex_editor.asm line 319
-02002C4A    bl      0x2002C7C                                         ; .\hex_editor.asm line 320
-02002C4E @@return:                                                    ; .\hex_editor.asm line 321
-02002C4E    add     r13,0x04                                          ; .\hex_editor.asm line 322
-02002C50    pop     r0-r7,pc                                          ; .\hex_editor.asm line 323
-02002C52 @clear_bytes:                                                ; .\hex_editor.asm line 325
-02002C52    mov     r2,0x00                                           ; .\hex_editor.asm line 326
-02002C54 @@loop:                                                      ; .\hex_editor.asm line 327
-02002C54    sub     r1,0x01                                           ; .\hex_editor.asm line 328
-02002C56    strb    r2,[r0,r1]                                        ; .\hex_editor.asm line 329
-02002C58    bhi     0x2002C54                                         ; .\hex_editor.asm line 330
-02002C5A    bx      lr                                                ; .\hex_editor.asm line 331
-02002C5C frameadvance:                                                ; .\builtins.asm line 3
-02002C5C    ldr     r4,=0x08013561                                    ; .\builtins.asm line 4
-02002C5E    bx      r4                                                ; .\builtins.asm line 5
-02002C60 .align 0x00000004                                            ; .\builtins.asm line 6
-02002C60 .word 0x08013561                                             ; .\builtins.asm line 6
-02002C64 create_panel:                                                ; .\builtins.asm line 7
-02002C64    ldr     r4,=0x08039261                                    ; .\builtins.asm line 8
-02002C66    bx      r4                                                ; .\builtins.asm line 9
-02002C68 .align 0x00000004                                            ; .\builtins.asm line 10
-02002C68 .word 0x08039261                                             ; .\builtins.asm line 10
-02002C6C clear_panel:                                                 ; .\builtins.asm line 11
-02002C6C    ldr     r4,=0x080393FD                                    ; .\builtins.asm line 12
-02002C6E    bx      r4                                                ; .\builtins.asm line 13
-02002C70 .align 0x00000004                                            ; .\builtins.asm line 14
-02002C70 .word 0x080393FD                                             ; .\builtins.asm line 14
-02002C74 delete_panel:                                                ; .\builtins.asm line 15
-02002C74    ldr     r4,=0x0803939D                                    ; .\builtins.asm line 16
-02002C76    bx      r4                                                ; .\builtins.asm line 17
-02002C78 .align 0x00000004                                            ; .\builtins.asm line 18
-02002C78 .word 0x0803939D                                             ; .\builtins.asm line 18
-02002C7C draw_tile_to_panel:                                          ; .\builtins.asm line 19
-02002C7C    ldr     r4,=0x0803C275                                    ; .\builtins.asm line 20
-02002C7E    bx      r4                                                ; .\builtins.asm line 21
-02002C80 .align 0x00000004                                            ; .\builtins.asm line 22
-02002C80 .word 0x0803C275                                             ; .\builtins.asm line 22
-02002C84 create_cursor:                                               ; .\builtins.asm line 23
-02002C84    ldr     r4,=0x0803F625                                    ; .\builtins.asm line 24
-02002C86    bx      r4                                                ; .\builtins.asm line 25
-02002C88 .align 0x00000004                                            ; .\builtins.asm line 26
-02002C88 .word 0x0803F625                                             ; .\builtins.asm line 26
-02002C8C draw_cursor:                                                 ; .\builtins.asm line 27
-02002C8C    ldr     r4,=0x0803F699                                    ; .\builtins.asm line 28
-02002C8E    bx      r4                                                ; .\builtins.asm line 29
-02002C90 .align 0x00000004                                            ; .\builtins.asm line 30
-02002C90 .word 0x0803F699                                             ; .\builtins.asm line 30
-02002C94 delete_cursor:                                               ; .\builtins.asm line 31
-02002C94    ldr     r4,=0x0803F6C1                                    ; .\builtins.asm line 32
-02002C96    bx      r4                                                ; .\builtins.asm line 33
-02002C98 .align 0x00000004                                            ; .\builtins.asm line 34
-02002C98 .word 0x0803F6C1                                             ; .\builtins.asm line 34
-02002C9C .close                                                       ; main.asm line 9
+02002B50    push    r0,r2,lr                                          ; .\hex_editor.asm line 181
+02002B52    mov     r2,0x1F                                           ; .\hex_editor.asm line 182
+02002B54    sub     r2,r2,r1                                          ; .\hex_editor.asm line 183
+02002B56    mov     r1,0x00                                           ; .\hex_editor.asm line 184
+02002B58    lsl     r0,r2                                             ; .\hex_editor.asm line 185
+02002B5A    bcc     0x2002B5E                                         ; .\hex_editor.asm line 186
+02002B5C @@up:                                                        ; .\hex_editor.asm line 187
+02002B5C    sub     r1,0x01                                           ; .\hex_editor.asm line 188
+02002B5E    lsl     r0,0x01                                           ; .\hex_editor.asm line 189
+02002B60    bcc     0x2002B64                                         ; .\hex_editor.asm line 190
+02002B62 @@down:                                                      ; .\hex_editor.asm line 191
+02002B62    add     r1,0x01                                           ; .\hex_editor.asm line 192
+02002B64    pop     r0,r2,pc                                          ; .\hex_editor.asm line 193
+02002B66 @move_cursor:                                                ; .\hex_editor.asm line 195
+02002B66    push    r0-r6,lr                                          ; .\hex_editor.asm line 196
+02002B68    ldrh    r4,[r0,0x08]                                      ; .\hex_editor.asm line 197
+02002B6A    ldrh    r5,[r0,0x0A]                                      ; .\hex_editor.asm line 198
+02002B6C    sub     r4,0x03                                           ; .\hex_editor.asm line 199
+02002B6E    sub     r5,0x03                                           ; .\hex_editor.asm line 200
+02002B70    mov     r0,r1                                             ; .\hex_editor.asm line 201
+02002B72    mov     r6,r2                                             ; .\hex_editor.asm line 202
+02002B74    ldrb    r2,[r6,0x04]                                      ; .\hex_editor.asm line 203
+02002B76    ldrb    r3,[r6,0x05]                                      ; .\hex_editor.asm line 204
+02002B78 @@updown:                                                    ; .\hex_editor.asm line 205
+02002B78    mov     r1,0x06                                           ; .\hex_editor.asm line 206
+02002B7A    bl      0x2002B50                                         ; .\hex_editor.asm line 207
+02002B7E    cmp     r1,0x00                                           ; .\hex_editor.asm line 208
+02002B80    beq     0x2002B90                                         ; .\hex_editor.asm line 209
+02002B82    sub     r3,r3,r1                                          ; .\hex_editor.asm line 210
+02002B84    bge     0x2002B88                                         ; .\hex_editor.asm line 211
+02002B86 @@topwrap:                                                   ; .\hex_editor.asm line 212
+02002B86    mov     r3,r5                                             ; .\hex_editor.asm line 213
+02002B88    cmp     r3,r5                                             ; .\hex_editor.asm line 214
+02002B8A    ble     0x2002B8E                                         ; .\hex_editor.asm line 215
+02002B8C @@botwrap:                                                   ; .\hex_editor.asm line 216
+02002B8C    mov     r3,0x00                                           ; .\hex_editor.asm line 217
+02002B8E    strb    r3,[r6,0x05]                                      ; .\hex_editor.asm line 218
+02002B90 @@leftright:                                                 ; .\hex_editor.asm line 219
+02002B90    mov     r1,0x04                                           ; .\hex_editor.asm line 220
+02002B92    bl      0x2002B50                                         ; .\hex_editor.asm line 221
+02002B96    cmp     r1,0x00                                           ; .\hex_editor.asm line 222
+02002B98    beq     0x2002BA8                                         ; .\hex_editor.asm line 223
+02002B9A    add     r2,r2,r1                                          ; .\hex_editor.asm line 224
+02002B9C    bge     0x2002BA0                                         ; .\hex_editor.asm line 225
+02002B9E @@leftwrap:                                                  ; .\hex_editor.asm line 226
+02002B9E    mov     r2,r4                                             ; .\hex_editor.asm line 227
+02002BA0    cmp     r2,r4                                             ; .\hex_editor.asm line 228
+02002BA2    ble     0x2002BA6                                         ; .\hex_editor.asm line 229
+02002BA4 @@rightwrap:                                                 ; .\hex_editor.asm line 230
+02002BA4    mov     r2,0x00                                           ; .\hex_editor.asm line 231
+02002BA6    strb    r2,[r6,0x04]                                      ; .\hex_editor.asm line 232
+02002BA8 @@return:                                                    ; .\hex_editor.asm line 233
+02002BA8    pop     r0-r6,pc                                          ; .\hex_editor.asm line 234
+02002BAA @draw_cursor_to_panel:                                       ; .\hex_editor.asm line 236
+02002BAA    push    r0-r4,lr                                          ; .\hex_editor.asm line 237
+02002BAC    mov     r4,r2                                             ; .\hex_editor.asm line 238
+02002BAE    ldrb    r2,[r1,0x04]                                      ; .\hex_editor.asm line 239
+02002BB0    ldrb    r3,[r1,0x05]                                      ; .\hex_editor.asm line 240
+02002BB2    lsl     r1,r2,0x03                                        ; .\hex_editor.asm line 241
+02002BB4    ldr     r2,[r0,0x0C]                                      ; .\hex_editor.asm line 242
+02002BB6    lsl     r2,0x03                                           ; .\hex_editor.asm line 243
+02002BB8    add     r1,r1,r2                                          ; .\hex_editor.asm line 244
+02002BBA    lsl     r2,r3,0x03                                        ; .\hex_editor.asm line 245
+02002BBC    ldr     r3,[r0,0x10]                                      ; .\hex_editor.asm line 246
+02002BBE    lsl     r3,0x03                                           ; .\hex_editor.asm line 247
+02002BC0    add     r2,r2,r3                                          ; .\hex_editor.asm line 248
+02002BC2    sub     r2,0x04                                           ; .\hex_editor.asm line 249
+02002BC4    mov     r0,r4                                             ; .\hex_editor.asm line 250
+02002BC6    bl      0x2002C90                                         ; .\hex_editor.asm line 251
+02002BCA    pop     r0-r4,pc                                          ; .\hex_editor.asm line 252
+02002BCC @draw_mem_viewer:                                            ; .\hex_editor.asm line 254
+02002BCC    push    r0-r7,lr                                          ; .\hex_editor.asm line 255
+02002BCE    add     r13,0xFC                                          ; .\hex_editor.asm line 256
+02002BD0    mov     r5,r1                                             ; .\hex_editor.asm line 257
+02002BD2    mov     r6,r2                                             ; .\hex_editor.asm line 258
+02002BD4    push    r0-r3                                             ; .\hex_editor.asm line 259
+02002BD6    bl      0x2002C70                                         ; .\hex_editor.asm line 260
+02002BDA    pop     r0-r3                                             ; .\hex_editor.asm line 261
+02002BDC    mov     r4,0x08                                           ; .\hex_editor.asm line 262
+02002BDE    str     r4,[r13]                                          ; .\hex_editor.asm line 263
+02002BE0    mov     r2,0x00                                           ; .\hex_editor.asm line 264
+02002BE2    mov     r3,0x00                                           ; .\hex_editor.asm line 265
+02002BE4    bl      0x2002C1C                                         ; .\hex_editor.asm line 266
+02002BE8    mov     r4,0x01                                           ; .\hex_editor.asm line 267
+02002BEA    str     r4,[r13]                                          ; .\hex_editor.asm line 268
+02002BEC    mov     r1,r6                                             ; .\hex_editor.asm line 269
+02002BEE    mov     r2,0x09                                           ; .\hex_editor.asm line 270
+02002BF0    bl      0x2002C1C                                         ; .\hex_editor.asm line 271
+02002BF4    mov     r2,0x00                                           ; .\hex_editor.asm line 272
+02002BF6    mov     r3,0x02                                           ; .\hex_editor.asm line 273
+02002BF8    lsl     r4,r6,0x01                                        ; .\hex_editor.asm line 274
+02002BFA    str     r4,[r13]                                          ; .\hex_editor.asm line 275
+02002BFC    add     r4,0x01                                           ; .\hex_editor.asm line 276
+02002BFE    mov     r7,0x07                                           ; .\hex_editor.asm line 277
+02002C00 @@loop:                                                      ; .\hex_editor.asm line 278
+02002C00    ldr     r1,[r5]                                           ; .\hex_editor.asm line 279
+02002C02    bl      0x2002C1C                                         ; .\hex_editor.asm line 280
+02002C06    add     r5,r5,r6                                          ; .\hex_editor.asm line 281
+02002C08    add     r2,r2,r4                                          ; .\hex_editor.asm line 282
+02002C0A    sub     r7,r7,r6                                          ; .\hex_editor.asm line 283
+02002C0C    bpl     0x2002C00                                         ; .\hex_editor.asm line 284
+02002C0E    mov     r7,0x07                                           ; .\hex_editor.asm line 285
+02002C10    mov     r2,0x00                                           ; .\hex_editor.asm line 286
+02002C12    add     r3,0x01                                           ; .\hex_editor.asm line 287
+02002C14    cmp     r3,0x12                                           ; .\hex_editor.asm line 288
+02002C16    bcc     0x2002C00                                         ; .\hex_editor.asm line 289
+02002C18    add     r13,0x04                                          ; .\hex_editor.asm line 290
+02002C1A    pop     r0-r7,pc                                          ; .\hex_editor.asm line 291
+02002C1C @draw_hex_value:                                             ; .\hex_editor.asm line 293
+02002C1C    push    r0-r6,lr                                          ; .\hex_editor.asm line 294
+02002C1E    ldr     r4,[r13,0x20]                                     ; .\hex_editor.asm line 295
+02002C20    mov     r5,r1                                             ; .\hex_editor.asm line 296
+02002C22    sub     r4,0x01                                           ; .\hex_editor.asm line 297
+02002C24    lsl     r4,0x02                                           ; .\hex_editor.asm line 298
+02002C26    mov     r6,0x0F                                           ; .\hex_editor.asm line 299
+02002C28 @@loop:                                                      ; .\hex_editor.asm line 300
+02002C28    mov     r1,r5                                             ; .\hex_editor.asm line 301
+02002C2A    lsr     r1,r4                                             ; .\hex_editor.asm line 302
+02002C2C    and     r1,r6                                             ; .\hex_editor.asm line 303
+02002C2E    bl      0x2002C3A                                         ; .\hex_editor.asm line 304
+02002C32    add     r2,0x01                                           ; .\hex_editor.asm line 305
+02002C34    sub     r4,0x04                                           ; .\hex_editor.asm line 306
+02002C36    bpl     0x2002C28                                         ; .\hex_editor.asm line 307
+02002C38    pop     r0-r6,pc                                          ; .\hex_editor.asm line 308
+02002C3A @draw_hex_digit:                                             ; .\hex_editor.asm line 310
+02002C3A    push    r0-r7,lr                                          ; .\hex_editor.asm line 311
+02002C3C    add     r13,0xFC                                          ; .\hex_editor.asm line 312
+02002C3E    cmp     r1,0x10                                           ; .\hex_editor.asm line 313
+02002C40    bcs     0x2002C52                                         ; .\hex_editor.asm line 314
+02002C42    cmp     r1,0x0A                                           ; .\hex_editor.asm line 315
+02002C44    bcc     0x2002C48                                         ; .\hex_editor.asm line 316
+02002C46    add     r1,0x07                                           ; .\hex_editor.asm line 317
+02002C48 @@low:                                                       ; .\hex_editor.asm line 318
+02002C48    add     r1,0x30                                           ; .\hex_editor.asm line 319
+02002C4A    mov     r4,0x02                                           ; .\hex_editor.asm line 320
+02002C4C    str     r4,[r13,0x00]                                     ; .\hex_editor.asm line 321
+02002C4E    bl      0x2002C80                                         ; .\hex_editor.asm line 322
+02002C52 @@return:                                                    ; .\hex_editor.asm line 323
+02002C52    add     r13,0x04                                          ; .\hex_editor.asm line 324
+02002C54    pop     r0-r7,pc                                          ; .\hex_editor.asm line 325
+02002C56 @clear_bytes:                                                ; .\hex_editor.asm line 327
+02002C56    mov     r2,0x00                                           ; .\hex_editor.asm line 328
+02002C58 @@loop:                                                      ; .\hex_editor.asm line 329
+02002C58    sub     r1,0x01                                           ; .\hex_editor.asm line 330
+02002C5A    strb    r2,[r0,r1]                                        ; .\hex_editor.asm line 331
+02002C5C    bhi     0x2002C58                                         ; .\hex_editor.asm line 332
+02002C5E    bx      lr                                                ; .\hex_editor.asm line 333
+02002C60 frameadvance:                                                ; .\builtins.asm line 3
+02002C60    ldr     r4,=0x08013561                                    ; .\builtins.asm line 4
+02002C62    bx      r4                                                ; .\builtins.asm line 5
+02002C64 .align 0x00000004                                            ; .\builtins.asm line 6
+02002C64 .word 0x08013561                                             ; .\builtins.asm line 6
+02002C68 create_panel:                                                ; .\builtins.asm line 7
+02002C68    ldr     r4,=0x08039261                                    ; .\builtins.asm line 8
+02002C6A    bx      r4                                                ; .\builtins.asm line 9
+02002C6C .align 0x00000004                                            ; .\builtins.asm line 10
+02002C6C .word 0x08039261                                             ; .\builtins.asm line 10
+02002C70 clear_panel:                                                 ; .\builtins.asm line 11
+02002C70    ldr     r4,=0x080393FD                                    ; .\builtins.asm line 12
+02002C72    bx      r4                                                ; .\builtins.asm line 13
+02002C74 .align 0x00000004                                            ; .\builtins.asm line 14
+02002C74 .word 0x080393FD                                             ; .\builtins.asm line 14
+02002C78 delete_panel:                                                ; .\builtins.asm line 15
+02002C78    ldr     r4,=0x0803939D                                    ; .\builtins.asm line 16
+02002C7A    bx      r4                                                ; .\builtins.asm line 17
+02002C7C .align 0x00000004                                            ; .\builtins.asm line 18
+02002C7C .word 0x0803939D                                             ; .\builtins.asm line 18
+02002C80 draw_tile_to_panel:                                          ; .\builtins.asm line 19
+02002C80    ldr     r4,=0x0803C275                                    ; .\builtins.asm line 20
+02002C82    bx      r4                                                ; .\builtins.asm line 21
+02002C84 .align 0x00000004                                            ; .\builtins.asm line 22
+02002C84 .word 0x0803C275                                             ; .\builtins.asm line 22
+02002C88 create_cursor:                                               ; .\builtins.asm line 23
+02002C88    ldr     r4,=0x0803F625                                    ; .\builtins.asm line 24
+02002C8A    bx      r4                                                ; .\builtins.asm line 25
+02002C8C .align 0x00000004                                            ; .\builtins.asm line 26
+02002C8C .word 0x0803F625                                             ; .\builtins.asm line 26
+02002C90 draw_cursor:                                                 ; .\builtins.asm line 27
+02002C90    ldr     r4,=0x0803F699                                    ; .\builtins.asm line 28
+02002C92    bx      r4                                                ; .\builtins.asm line 29
+02002C94 .align 0x00000004                                            ; .\builtins.asm line 30
+02002C94 .word 0x0803F699                                             ; .\builtins.asm line 30
+02002C98 delete_cursor:                                               ; .\builtins.asm line 31
+02002C98    ldr     r4,=0x0803F6C1                                    ; .\builtins.asm line 32
+02002C9A    bx      r4                                                ; .\builtins.asm line 33
+02002C9C .align 0x00000004                                            ; .\builtins.asm line 34
+02002C9C .word 0x0803F6C1                                             ; .\builtins.asm line 34
+02002CA0 .close                                                       ; main.asm line 9

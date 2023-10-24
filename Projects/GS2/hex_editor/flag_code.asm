@@ -17,7 +17,7 @@
             ldmia r4!, {r2}
             stmia r0!, {r2} // set bit 13 to branch to setup (becomes `b 0xC`)
             bhi @@loop
-        str r0, [r1, @@pool-0x020000BC] // increment dest
+        str r0, [r1, @@pool-0x020000BC] // increment dest; flip bit 11, 13, or 14 to disable
         pop {r4-r7,pc} // jump up two stack levels; convenient way to restore r5-r7 in one line
         .align
         @@pool:
