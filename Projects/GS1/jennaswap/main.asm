@@ -7,31 +7,29 @@
 .org 0x020000E4
 
 .arm
-add r0, pc, 9
-mov r1, 0x03000000
-str r0, [r1, 0xE0]
+add r0, pc, 5
+str r0, [r12, r8, lsl 8] // write r0 at 030000E0
 bx lr
 
 .thumb
 add r0, =@@pool
-ldmia r0!, {r0-r3}
-ldrh r4, [r0]
-lsl r4, 0x1E
+ldmia r0!, {r0-r2}
+ldrh r3, [r0]
+lsl r3, 0x1E
 bcc @@exit
-add r0, 0x60
-ldrh r0, [r0]
+ldr r0, [r0, 0x60]
 lsl r0, 0x17
 bcc @@exit
-ldr r0, [r1]
-mov r4, 5
-eor r0, r4
-str r0, [r1]
-sub r1, 0x4D
-strh r1, [r2]
+add r0, pc, 0x330
+ldrb r3, [r0]
+eor r3, r1
+strb r3, [r0]
+sub r0, 0x4D
+str r0, [r1, 0x6C] // write 0x3E7 at 02030170
 @@exit:
-    bx r3
+    bx r2
 .align
 @@pool:
-    .word 0x03001C94, 0x02000434, 0x02030170, 0x08003651
+    .word 0x03001C94, 0x02030105, 0x08003651
 
 .close
