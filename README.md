@@ -12,12 +12,14 @@ A simple framework for writing and testing arbitrary code in emulator games.
   - **Bizhawk** : go to `Tools > Lua Console > Script > Open Script...`  Double-click on the script to run it.
   - **VBA-RR**  : go to `Tools > Lua Scripting > New Lua Script Window... > Browse...`
 - in the lua console (or overlayed input box if in **VBA-RR**), type `run("project_name")` where `project_name` is the name of any of the projects in the **Projects** folder (all projects contain an `init.lua` file, otherwise it's just a folder)
-  - if using **VBA-RR**, you must manually load a project savestate (if the project requires a savestate) before using `run("project_name")` because lua can't do it natively (go to `File > Load Game > Load From File...`)
+- alternatively, you can type `loadstate("filename")`, where `filename` is the name (just the name, no extension or relative path) of any savestate files in the `saves` folder of the game that you're running.  The function will detect which emulator you're using and load the corresponding file.  Example: `loadstate("hex_editor")`
+- Unfortunately, if using **VBA-RR**, you must manually load savestates because lua can't do it from files. (go to `File > Load Game > Load From File...`)
 
 ### Creating a project
 - Create a folder within the `Projects` folder.  If it's designed for a specific game, put your folder in that game's folder.
 - Within your folder, add a file named `init.lua`.  This designates your folder as a project.
-  - You may leave this file blank, or write any lua code you want to run each time your project is run.  To load a savestate, write `loadstate(filename)`, where `filename` is the name (just the name, no extension or relative path) of any files in the `saves` folder of the game that you're running.  The function will detect which emulator you're using and load the corresponding file.
+  - You may leave this file blank, or write any lua code you want to run each time your project is run.
+  - To run your code from a savestate, write `loadstate("filename")` in `init.lua`
 - Create an asm file within your folder to be assembled using **armips.exe**
 - See the `sample` project for a simple example.  You can also copy paste it and rename the folder to make a new project.
 
