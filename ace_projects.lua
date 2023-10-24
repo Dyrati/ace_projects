@@ -1,8 +1,20 @@
 paths = {
     folder = nil,
-    save = "saves/state",
     temp = "temp",
     init = "init",
+    saves = "saves",
+    projects = "Projects",
+}
+
+game_titles = {
+    Golden_Sun_A = "GS1",
+    GOLDEN_SUN_B = "GS2",
+}
+
+save_extensions = {
+    bizhawk = "State",
+    mgba = "ss0",
+    vba = "sgm",
 }
 
 -- emulator compatibility
@@ -78,6 +90,13 @@ paths = {
             out[v] = true
         end
         return out
+    end
+
+    function add_extension(filename, ext)
+        if not filename:match("%."..ext.."$") then
+            filename = filename.."."..ext
+        end
+        return filename
     end
 
     function check_extensions(filename, ...)
@@ -174,13 +193,18 @@ paths = {
         end
     end
 
+    function loadstate(filename)
+        if not load_state_file then return end
+        local game_folder = game_titles[rom_header_info().game_title]
+        local path = pathjoin(paths.folder, paths.projects, game_folder, paths.saves, emulator, filename)
+        local fullpath = check_extensions(path, save_extensions[emulator])
+        assert(fullpath, "could not find "..add_extension(path, save_extensions[emulator]))
+        load_state_file(fullpath)
+    end
+
     function run(package_name)
-        local projects = pathjoin(paths.folder, "Projects")
-        local game_title = rom_header_info().game_title
-        local game_folder = 
-            game_title == "Golden_Sun_A" and "GS1" or
-            game_title == "GOLDEN_SUN_B" and "GS2" or 
-            ""
+        local projects = pathjoin(paths.folder, paths.projects)
+        local game_folder = game_titles[rom_header_info().game_title] or ""
         local package_path = pathjoin(projects, game_folder, package_name)
         local init_file = check_extensions(pathjoin(package_path, paths.init), "lua")
         if not init_file then
@@ -189,15 +213,12 @@ paths = {
         end
         assert(init_file, ("could not find init.lua in '%s'"):format(package_name))
         dofile(init_file)
-        local save_ext = 
-            emulator == "mgba" and "ss0" or
-            emulator == "bizhawk" and "State" or 
-            emulator == "vba" and "sgm"
-        local save = check_extensions(pathjoin(package_path, paths.save), save_ext)
-        if save and load_state_file then load_state_file(save) end
         local temp = check_extensions(pathjoin(package_path, paths.temp), "txt")
-        assert(temp, "could not find "..temp)
-        load_armips_output(temp)
+        if not temp then
+            print("could not find "..temp)
+        else
+            load_armips_output(temp)
+        end
     end
 
 --
