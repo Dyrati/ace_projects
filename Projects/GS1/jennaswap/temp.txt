@@ -7,28 +7,28 @@
 
 00000000 .create "main.bin",0x02000000                                ; main.asm line 2
 02000000 .org 0x020005D8                                              ; main.asm line 4
-020005D8 .word 0x10B40067                                             ; main.asm line 5
-020005DC .org 0x020000E4                                              ; main.asm line 7
-020000E4    add     r0,pc,0x00000005                                  ; main.asm line 10
-020000E8    str     r0,[r12,r8,lsl 0x8]                               ; main.asm line 11
-020000EC    bx      lr                                                ; main.asm line 12
-020000F0    add     r0,=0x00000000                                    ; main.asm line 15
-020000F2    ldmia   r0!,r0-r2                                         ; main.asm line 16
-020000F4    ldrh    r3,[r0]                                           ; main.asm line 17
-020000F6    lsl     r3,0x1E                                           ; main.asm line 18
-020000F8    bcc     0x200010C                                         ; main.asm line 19
-020000FA    ldr     r0,[r0,0x00]                                      ; main.asm line 20
-020000FC    lsl     r0,0x17                                           ; main.asm line 21
-020000FE    bcc     0x200010C                                         ; main.asm line 22
-02000100    add     r0,r15,0x30                                       ; main.asm line 23
-02000102    ldrb    r3,[r0]                                           ; main.asm line 24
-02000104    eor     r3,r1                                             ; main.asm line 25
-02000106    strb    r3,[r0]                                           ; main.asm line 26
-02000108    sub     r0,0x4D                                           ; main.asm line 27
-0200010A    str     r0,[r1,0x0C]                                      ; main.asm line 28
-0200010C @@exit:                                                      ; main.asm line 29
-0200010C    bx      r2                                                ; main.asm line 30
-0200010E .align 0x00000004                                            ; main.asm line 31
-02000110 @@pool:                                                      ; main.asm line 32
-02000110 .word 0x03001C94,0x02030105,0x08003651                       ; main.asm line 33
-0200011C .close                                                       ; main.asm line 35
+020005D8 .halfword 0x0067,0x10B4                                      ; main.asm line 5
+020005DC .org 0x020000C0                                              ; main.asm line 7
+020000C0    add     r0,pc,0x00000005                                  ; main.asm line 10
+020000C4    str     r0,[r12,r8,lsl 0x8]                               ; main.asm line 11
+020000C8    bx      lr                                                ; main.asm line 12
+020000CC    add     r0,=0x00000000                                    ; main.asm line 15
+020000CE    ldmia   r0!,r0-r2                                         ; main.asm line 16
+020000D0    ldrh    r3,[r0]                                           ; main.asm line 17
+020000D2    lsl     r3,0x1E                                           ; main.asm line 18
+020000D4    bcc     0x20000E8                                         ; main.asm line 19
+020000D6    ldr     r0,[r0,0x00]                                      ; main.asm line 20
+020000D8    lsl     r0,0x17                                           ; main.asm line 21
+020000DA    bcc     0x20000E8                                         ; main.asm line 22
+020000DC    add     r0,r15,0x54                                       ; main.asm line 23
+020000DE    ldrb    r3,[r0]                                           ; main.asm line 24
+020000E0    eor     r3,r1                                             ; main.asm line 25
+020000E2    strb    r3,[r0]                                           ; main.asm line 26
+020000E4    sub     r0,0x4D                                           ; main.asm line 27
+020000E6    str     r0,[r1,0x0C]                                      ; main.asm line 28
+020000E8 @@exit:                                                      ; main.asm line 29
+020000E8    bx      r2                                                ; main.asm line 30
+020000EA .align 0x00000004                                            ; main.asm line 31
+020000EC @@pool:                                                      ; main.asm line 32
+020000EC .word 0x03001C94,0x02030105,0x08003651                       ; main.asm line 33
+020000F8 .close                                                       ; main.asm line 35

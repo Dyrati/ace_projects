@@ -2,9 +2,9 @@
 .create "main.bin", 0x02000000
 
 .org 0x020005D8
-.word 0x10B40067 // give Isaac one herb to activate flag execution
+.halfword 0x0067, 0x10B4 // give Isaac one-piece-dress and 3 herbs
 
-.org 0x020000E4
+.org 0x020000C0
 
 .arm
 add r0, pc, 5
@@ -20,7 +20,7 @@ bcc @@exit
 ldr r0, [r0, 0x60]
 lsl r0, 0x17
 bcc @@exit
-add r0, pc, 0x330
+add r0, pc, 0x354
 ldrb r3, [r0]
 eor r3, r1
 strb r3, [r0]
