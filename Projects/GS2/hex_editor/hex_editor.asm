@@ -234,22 +234,20 @@
             pop {r0-r6,pc}
 
     @draw_cursor_to_panel: // *panel, *editor_attrs, *sprite_attrs
-        push {r0-r4,lr}
-        mov r4, r2
+        push {r0-r5,lr}
+        ldr r3, [r0, 0xC] // panel x
+        ldr r4, [r0, 0x10] // panel y
+        mov r0, r2
         ldrb r2, [r1, 4] // cursor x
-        ldrb r3, [r1, 5] // cursor y
-        lsl r1, r2, 3
-        ldr r2, [r0, 0xC] // panel x
+        ldrb r5, [r1, 5] // cursor y
+        add r1, r2, r3
+        add r2, r4, r5
+        lsl r1, 3
         lsl r2, 3
-        add r1, r1, r2
-        lsl r2, r3, 3
-        ldr r3, [r0, 0x10] // panel y
-        lsl r3, 3
-        add r2, r2, r3
+        add r1, 2
         sub r2, 4
-        mov r0, r4
         bl draw_cursor
-        pop {r0-r4,pc}
+        pop {r0-r5,pc}
 
     @draw_mem_viewer: // *panel, address, groupsize
         push {r0-r7,lr}
