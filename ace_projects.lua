@@ -186,7 +186,6 @@ save_extensions = {
                     elseif word == "skip" then
                         pos = pos + tonumber(args[1])
                     end
-                    pos = tonumber(args[position_setters[word]])
                     prevpos = pos
                 end
             end
