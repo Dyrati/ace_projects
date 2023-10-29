@@ -25,7 +25,7 @@
 
 // flag 500
     .org 0x020000E0
-    @setup: // called while on debug tile; add end_of_frame to interrupt handler
+    @setup: // called while on debug tile; add each_frame to interrupt handler
         lsr r0, r1, 1
         add r1, 0x2E
         add r2, pc, 0xA0
