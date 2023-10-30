@@ -153,7 +153,8 @@ save_extensions = {
         for line in io.lines(tempfile) do
             local addr, rest = line:match("^(%x+) (.-)%s*;")
             if addr then
-                local directive, word, argstring = rest:match("(%.?)(%S+)%s?(%S*)")
+                local directive, word, argstring = rest:match("(%.?)(%S+)%s?([^;]*)")
+                argstring = argstring:match("^%s*(.-)%s*$")
                 prevpos = pos
                 pos = tonumber(addr, 16)
                 if prevpos and prevpos < pos then
