@@ -170,7 +170,7 @@ save_extensions = {
                     if word == "create" or word == "open" then
                         header = tonumber(args[2])
                         pos = header
-                        local filename = args[1]:gsub('"',""):gsub("^.[\092/]","")
+                        local filename = args[1]:gsub('"',""):match("[^\092/]*$")
                         local folder = tempfile:match("(.*[\092/]).+%..+$")
                         filename = filecheck(folder..filename) or filecheck(filename)
                         assert(filename, "could not find "..filename)
