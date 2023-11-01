@@ -1,7 +1,7 @@
 // Hex editor module
     .org 0x02002A00
 
-    hex_editor: // called each frame within frameadvance function, before graphic updates
+    main: // called each frame within frameadvance function, before graphic updates
         push {r5-r7,lr}
         add sp, -0x20 // 5th arg, sprite_slot, sprite_attrs (0xC), prev_input, hold_timer, *panel
         add r5, =hex_editor_attrs
@@ -322,7 +322,7 @@
             add sp, 0x4
             pop {r0-r7,pc}
 
-    @clear_bytes: // addr, length, value
+    @clear_bytes: // addr, length
         mov r2, 0
         @@loop:
             sub r1, 1

@@ -52,7 +52,7 @@
 020000D6 .org 0x020000C0                                              ; .\flag_code.asm line 49
 020000C0    pop     r0-r3                                             ; .\flag_code.asm line 50
 020000C2 .org 0x02002A00                                              ; .\hex_editor.asm line 2
-02002A00 hex_editor:                                                  ; .\hex_editor.asm line 4
+02002A00 main:                                                        ; .\hex_editor.asm line 4
 02002A00    push    r5-r7,lr                                          ; .\hex_editor.asm line 5
 02002A02    add     r13,0xE0                                          ; .\hex_editor.asm line 6
 02002A04    add     r5,=0x00000000                                    ; .\hex_editor.asm line 7

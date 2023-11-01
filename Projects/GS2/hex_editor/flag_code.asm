@@ -21,7 +21,7 @@
         pop {r4-r7,pc} // jump up two stack levels; convenient way to restore r5-r7 in one line
         .align
         @@pool:
-            .word hex_editor
+            .word main
 
 // flag 500
     .org 0x020000E0
@@ -31,7 +31,7 @@
         add r2, pc, 0xA0
         str r1, [r0, r2] // write @each_frame+1 at 030001E4
         pop {pc}
-    @each_frame: // called each frame after graphic updates; add hex_editor to frame loop
+    @each_frame: // called each frame after graphic updates; add main to frame loop
         lsr r1, r2, 0x6 // 0x4C0, r2 was 0x13000
         add r0, =@@pool
         ldmia r0!, {r0,r2-r3}
@@ -39,7 +39,7 @@
         bx r2
         .align
         @@pool:
-            .word hex_editor
+            .word main + 1
             .word @add_to_main_loop + 2
             .word @on_vblank + 2
 
