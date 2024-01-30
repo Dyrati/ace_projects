@@ -4,6 +4,14 @@
 
 ![inventory](gs1_ace_setup_images/inventory.png)
 
+```
+Bone, Herb*3, Cotton Shirt, Nut*2, Elixir*18
+Mint, Bandit's Sword, Sleep Bomb*2, Game Ticket*3, Mace(E)
+Smoke Bomb*2, Shaman's Rod, Bramble Seed, Battle Axe
+```
+
+Ensure that the items are in the correct order.
+
 ### Step 2: Save inside of Lunpa Fortress
 
 ![lunpa](gs1_ace_setup_images/lunpa.png)
@@ -14,7 +22,7 @@ Run up the vine ladder in the back of the room, run out the left door, drain you
 ![tret](gs1_ace_setup_images/tret.png)
 
 ### Step 4: Out of bounds
-Hard reset, load the Tret save, and run Up+Right until you see Isaac.  Run around the top of the room until you're standing in this corner:
+Hard reset, and load the Tret save.  Cast Avoid or use a Sacred Feather to disable encounters.  Run Up+Right until you see Isaac.  Run around the top of the room until you're standing in this corner:
 
 ![corner](gs1_ace_setup_images/corner.png)
 
@@ -45,15 +53,15 @@ Try to move one tile to the right, then press A.  If you moved enough, you will 
 If you moved too far, the game will crash and you will be unable to open menus.  If the game crashed, or if there's no water tile, return to step 6.
 
 ### Step 9: The Final Movement
-Run left for at least 2 seconds, and during the first second, try to move down at least one tile.  If you didn't move down enough, you will appear here, and need to load your savestate:
+Run left for at least 2 seconds, and during the first second, try to move down at least one tile.  If you didn't move down enough, you will appear here, and will need to load your savestate:
 
 ![psy_stone_room](gs1_ace_setup_images/psy_stone_room.png)
 
-If you moved down 2-3 tiles, then held straight left, then you will appear here:
+If you moved down 2-3 tiles, then held straight left, you will appear here:
 
 ![left_branch](gs1_ace_setup_images/left_branch.png)
 
-If you moved down 2-3 tiles, then held down-left, then you will appear here:
+If you moved down 2-3 tiles, then held down-left, you will appear here:
 
 ![forest](gs1_ace_setup_images/forest.png)
 
