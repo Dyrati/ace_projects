@@ -22,7 +22,10 @@ Cast **Avoid** to prevent encounters.  Run up the vine ladder in the back of the
 ![tret](gs1_ace_setup_images/tret.png)
 
 ### Step 4: Out of bounds
-**Hard reset**, load the Tret save, and **run up+right** until you see Isaac.  
+**Hard reset**, load the Tret save, and **run up+right** until you see Isaac.
+
+![bottom_left_corner](gs1_ace_setup_images/bottom_left_corner.png)
+
 Run around the top of the room until you're standing in this corner:
 
 ![corner](gs1_ace_setup_images/corner.png)
