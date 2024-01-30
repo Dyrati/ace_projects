@@ -4,6 +4,14 @@
 
 ![inventory](gs1_ace_setup_images/inventory.png)
 
+```
+Bone, Herb*3, Cotton Shirt, Nut*2, Elixir*18
+Mint, Bandit's Sword, Sleep Bomb*2, Game Ticket*3, Mace(E)
+Smoke Bomb*2, Shaman's Rod, Bramble Seed, Battle Axe
+```
+
+Ensure that the items are in the correct order.
+
 ### Step 2: Save inside of Lunpa Fortress
 
 ![lunpa](gs1_ace_setup_images/lunpa.png)
