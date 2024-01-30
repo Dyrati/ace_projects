@@ -1,7 +1,7 @@
 ; 4 files included
 ; 426 lines
 ; 54 labels
-; 2 equations
+; 3 equations
 
 ; main.asm
 ; .\flag_code.asm
@@ -9,26 +9,26 @@
 ; .\builtins.asm
 
 00000000 .create ".\main.bin",0x02000000                              ; main.asm line 3
-02000000 .org 0x020000C0                                              ; .\flag_code.asm line 5
-020000C0 @copy:                                                       ; .\flag_code.asm line 6
-020000C0    pop     r0-r3,pc                                          ; .\flag_code.asm line 7
-020000C2    lsl     r0,r0,0x00                                        ; .\flag_code.asm line 8
-020000C4    add     r1,r15,0x00                                       ; .\flag_code.asm line 9
-020000C6    sub     r1,0x0B                                           ; .\flag_code.asm line 10
-020000C8    strb    r1,[r1,0x04]                                      ; .\flag_code.asm line 11
-020000CA    add     r4,=0x00000000                                    ; .\flag_code.asm line 12
-020000CC    ldmia   r4!,r0                                            ; .\flag_code.asm line 13
-020000CE    mov     r3,0x08                                           ; .\flag_code.asm line 14
-020000D0 @@loop:                                                      ; .\flag_code.asm line 15
-020000D0    sub     r3,0x01                                           ; .\flag_code.asm line 16
-020000D2    ldmia   r4!,r2                                            ; .\flag_code.asm line 17
-020000D4    stmia   r0!,r2                                            ; .\flag_code.asm line 18
-020000D6    bhi     0x20000D0                                         ; .\flag_code.asm line 19
-020000D8    str     r0,[r1,0x00]                                      ; .\flag_code.asm line 20
-020000DA    pop     r4-r7,pc                                          ; .\flag_code.asm line 21
-020000DC .align 0x00000004                                            ; .\flag_code.asm line 22
-020000DC @@pool:                                                      ; .\flag_code.asm line 23
-020000DC .word 0x02002A00                                             ; .\flag_code.asm line 24
+02000000 .org 0x020000C0                                              ; .\flag_code.asm line 6
+020000C0 @copy:                                                       ; .\flag_code.asm line 7
+020000C0    pop     r0-r3,pc                                          ; .\flag_code.asm line 8
+020000C2    lsl     r0,r0,0x00                                        ; .\flag_code.asm line 9
+020000C4    add     r1,r15,0x00                                       ; .\flag_code.asm line 10
+020000C6    sub     r1,0x0B                                           ; .\flag_code.asm line 11
+020000C8    strb    r1,[r1,0x04]                                      ; .\flag_code.asm line 12
+020000CA    add     r4,=0x00000000                                    ; .\flag_code.asm line 13
+020000CC    ldmia   r4!,r0                                            ; .\flag_code.asm line 14
+020000CE    mov     r3,0x08                                           ; .\flag_code.asm line 15
+020000D0 @@loop:                                                      ; .\flag_code.asm line 16
+020000D0    sub     r3,0x01                                           ; .\flag_code.asm line 17
+020000D2    ldmia   r4!,r2                                            ; .\flag_code.asm line 18
+020000D4    stmia   r0!,r2                                            ; .\flag_code.asm line 19
+020000D6    bhi     0x20000D0                                         ; .\flag_code.asm line 20
+020000D8    str     r0,[r1,0x00]                                      ; .\flag_code.asm line 21
+020000DA    pop     r4-r7,pc                                          ; .\flag_code.asm line 22
+020000DC .align 0x00000004                                            ; .\flag_code.asm line 23
+020000DC @@pool:                                                      ; .\flag_code.asm line 24
+020000DC .word 0x02002A00                                             ; .\flag_code.asm line 25
 020000E0 .org 0x020000E0                                              ; .\flag_code.asm line 27
 020000E0 @setup:                                                      ; .\flag_code.asm line 28
 020000E0    lsr     r0,r1,0x01                                        ; .\flag_code.asm line 29
@@ -44,7 +44,7 @@
 020000F2    bx      r2                                                ; .\flag_code.asm line 39
 020000F4 .align 0x00000004                                            ; .\flag_code.asm line 40
 020000F4 @@pool:                                                      ; .\flag_code.asm line 41
-020000F4 .word 0x02002A00                                             ; .\flag_code.asm line 42
+020000F4 .word 0x02002A01                                             ; .\flag_code.asm line 42
 020000F8 .word 0x080145AB                                             ; .\flag_code.asm line 43
 020000FC .word 0x0801399F                                             ; .\flag_code.asm line 44
 02000100 .org 0x020000D4                                              ; .\flag_code.asm line 47
