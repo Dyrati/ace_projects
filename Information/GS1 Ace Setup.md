@@ -57,6 +57,8 @@ If you moved down 2-3 tiles, then held down-left, then you will appear here:
 
 ![forest](gs1_ace_setup_images/forest.png)
 
+In either of those cases, you have crossed over the trigger tile and Debug mode should be active.
+
 If you moved down exactly one tile, you will not pop out anywhere.  In this case, run straight down (at least one tile, into a wall).  You may make a savestate here.  If you press A, the game will crash, but you will see the text: **"Isaac looked on the table..."**, confirming that the trigger tile is one tile directly to your left.  Stepping on that tile will trigger ACE.
 
 ### Step 10: Open Debug Menu
