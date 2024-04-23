@@ -1,4 +1,4 @@
-# The Arbitrary Code Execution Project
+# GBA Emulator Arbitrary Code Execution Project
 
 A simple framework for writing and testing arbitrary code in emulator games.
 - If you're someone who just wants to try out flappy bird, a hex editor, or anything else ACE-hacked into your favorite game, all you need is a supported emulator ([mGBA](https://mgba.io/downloads.html), [Bizhawk](https://tasvideos.org/Bizhawk), or [VBA-RR](https://tasvideos.org/EmulatorResources/VBA)) and your own game ROM.
