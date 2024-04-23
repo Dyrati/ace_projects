@@ -10,7 +10,13 @@ Mint, Bandit's Sword, Sleep Bomb*2, Game Ticket*3, Mace(E)
 Smoke Bomb*2, Shaman's Rod, Bramble Seed, Battle Axe
 ```
 
-Ensure that the items are in the correct order.
+Ensure that the items are in the correct order.  
+
+If you can edit memory, you can give Isaac this inventory by writing the following at address `020005D8` (in 32-bit mode):
+```
+10B400E7 08B50059 00C388BC 08E3001B
+022B10E4 004108E2 001F00F0
+```
 
 ### Step 2: Save inside of Lunpa Fortress
 
