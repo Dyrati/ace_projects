@@ -15,7 +15,7 @@
     mov r3, 8 // number of 32-bit words to copy
     @@loop:
         sub r3, 1
-        ldmia r4!, {r2}
+        ldmia r4!, {r2} // unset 49A and set 4AA to swap src, des
         stmia r0!, {r2} // set bit 13 to branch to setup (becomes `b 0xC`)
         bhi @@loop
     str r0, [r1, @@pool-0x020000BC] // increment dest; flip bit 11, 13, or 14 to disable
