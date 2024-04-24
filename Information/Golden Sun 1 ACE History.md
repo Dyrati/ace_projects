@@ -1,4 +1,4 @@
-Golden Sun 1 ACE History
+# Golden Sun 1 ACE History
 
 Way back on January 22, 2015, **Plexa** (veteran speedrunner/human encyclopedia in Golden Sun circles) asked about some unusual glitches occurring deep out of bounds in Tret Tree.  Unlike other maps, walking around out of bounds in Tret would often cause soft-locks or crashes.
 
