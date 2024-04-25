@@ -1,6 +1,6 @@
 # Golden Sun 1 ACE History
 
-Way back on January 22, 2015, **Plexa** (veteran speedrunner/human encyclopedia in Golden Sun circles) asked about some unusual glitches occurring deep out of bounds in Tret Tree.  Unlike other maps, walking around out of bounds in Tret would often cause soft-locks or crashes.
+Way back in 2015, on January 22, **Plexa** (veteran speedrunner/human encyclopedia in Golden Sun circles) asked about some unusual glitches occurring deep out of bounds in Tret Tree.  Unlike other maps, walking around out of bounds in Tret would often cause soft-locks or crashes.
 
 **Teawater** (brilliant hacking scientist, aka **Fox** in GSHC forums, aka **Beyond** in GSHC discord) decided to look into it.  Normally, in Tret, when you jump on a leaf tile, the graphic changes to show that it's damaged, and the next time you jump on it, it breaks and you fall through.  The graphic change is simply a 32-bit write to an address 0x100 bytes away from the leaf.  Teawater realized that the game was interpreting some out of bounds data as leaf tiles.  Stepping on those phony leaves still triggered graphical writes to nearby WRAM, relative to the position of the leaf.
 
@@ -18,4 +18,4 @@ But on 2/28/2021, I successfully activated Debug Mode using event list corruptio
 
 Teawater soon found the "Slot 8 glitch", which is activated when you open a menu when you have 8 players in your party.  The function responsible for drawing your HP and PP at the top of the screen allocates only enough space for 5 party members, and each additional party member overwrites 2 bytes of the stack.  The overwritten bytes from the 8th party member happens to stick around when you close the menu, and causes the game to write your coordinates to a different address than usual.  It effectively allowed us to place a leaf tile anywhere we could walk to, but only once per room load.  I used that glitch to modify various RAM addresses to essentially "fix" the garbage data of an early game map so that it could also trigger ACE.  Prior to that, we needed the garbage data of a lategame map.
 
-Not long after that, I used a combination of names and inventories that both activated Debug Mode, and could trigger the CPU to execute from the flag bank, which was fully within our control thanks to Debug's built-in flag bank editor, therefore activating true ACE.
+Not long after that, I used a combination of names and inventories that both activated Debug Mode, and could trigger the CPU to execute from the flag bank, which was fully within our control thanks to Debug's built-in flag bank editor, thereby activating true ACE.
