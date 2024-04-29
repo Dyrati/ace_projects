@@ -1,10 +1,15 @@
 # ACE Setup For Golden Sun 1:
-This guide is geared towards simplicity (speed is a secondary priority), and should enable you to activate Arbitrary Code Execution even if you've never played the game before.  To summarize the entire route:
+This guide is geared towards simplicity (speed is a secondary priority), and should enable you to activate Arbitrary Code Execution even if you've never played the game before.  It should (hopefully) work for all localizations and consoles.  To summarize the entire route:
 1. Use custom names  
-| Isaac | Garet | Ivan  | Mia   | Felix | Jenna | Sheba |  
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|  
-|`\|N=X`|`H!.W` |`7!@Z` |`##xG` |`_,MR` |`xx"Y` |`((_T` |  
-
+```
+  Isaac  |N=X
+  Garet  H!.W
+  Ivan   7!@Z
+  Mia    ##xG
+  Felix  _,MR
+  Jenna  xx"Y
+  Sheba  ((_T
+```
 2. set specific prologue flags (talk to neighbor, tell injured man he'll live, trigger only the last boulder)
 3. activate slot 8 (in Tret, stand on 0200053C with defense values of 53, 55, 56, and 57, shifting a player each time)
 4. use slot 8 on the ACE tile (open menu on 0200846C, then step on the nearest leaf after clearing Isaac's inventory)
@@ -17,7 +22,7 @@ There's nothing else you really have to do.  Most of this guide is just setup fo
 ![path](gs1_ace_images/ace_setup.png)
 
 ## Start a new game
-At the name-selection menu, press `↑ ↓ ↑ ↓ ← → ← → ↑ → ↓ ← ↑ select` to enable you to rename everyone.  Fully release each input before pressing the next one.  You should hear a "ding" if you did it correctly.  These names constitute the bulk of the code to be executed by the CPU when ACE is triggered.
+At the name-selection menu, press `↑ ↓ ↑ ↓ ← → ← → ↑ → ↓ ← ↑ select` to enable you to rename everyone.  Fully release each input before pressing the next one.  You should hear a "ding" if you did it correctly.  Use the names listed above.  These names constitute the bulk of the code to be executed by the CPU when ACE is triggered.
 
 ## The Prologue
 
@@ -101,13 +106,7 @@ Solve the log puzzles, and continue running from everything.  Keep everyone topp
 4. Leave the lobby, then continue on your Tret file.
 
 ## Out of Bounds
-You should now be "out-of-bounds".  You will need to listen for the "bass-notes" in the music for some instructions.  In Tret, they are evenly spaced about 1 second apart (63 frames, or 1.05 seconds to be precise), and are easy to hear.  They are the vertical spikes in the spectrogram below.
-
-<video width="320" height="240" controls>
-  <source src="gs1_ace_images/spectrogram.mp4" type="video/mp4">
-</video>
-
-You can also just use a stopwatch if you prefer.
+You should now be "out-of-bounds".  You will need to listen for the "bass-notes" in the music for some instructions.  In Tret, they are evenly spaced about 1 second apart (63 frames, or 1.05 seconds to be precise), and are easy to hear.  You can also just use a stopwatch if you prefer.
 
 While running around, you might get some "bad" encounters.  Most encounters you can simply run from and continue, but some encounters are "bad" because they impact the out of bounds landscape.  
 
