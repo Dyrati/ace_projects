@@ -119,11 +119,11 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 
 1. Run Up + Right until you see Isaac, then run into the corner shown in the image
 
-2. Run Up + Left for at least 23 total bass notes.  Then run Right for at least 1 bass note.  Heal your party as you go.
+2. Run Up + Left for at least 23 total bass notes.  Heal your party as you go.  At the end, if you think you're close to getting an encounter, wiggle left and right until you get one.
 
-3. **Drain your PP to 7 or less** (so that it doesn't teleport you when you run across it), save, and hard reset.
+3. Run Right for at least 1 bass note, **drain your PP to 6 or less** (so that it doesn't teleport you when you run across it), save, and hard reset.
 
-4. Immediately after loading your save, run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset and try again.  If you get an encounter within 2 bass notes, and pop out somewhere else, you can reset, visit battle mode, and wiggle left and right to get the encounter, then run right and save. If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.
+4. Immediately after loading your save, run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset and try again.  If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.
 
 5. Drain your PP to 2.  If you can't reach 2 exactly, put Flint on Isaac and switch standby/set.
 
@@ -152,7 +152,7 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 (the brown `F3` is the barrel, and the yellow `30` is the ACE tile)
 6. Move left until you see a vertical line on the left edge of the screen.  Position it 0-1 pixels from the left edge.  
 ![position3](gs1_ace_images/position3.png)  
-7. **Walk** left (don't run) for **exactly** 1 beat
+7. **Walk left** (don't run) for **exactly** 1 beat
 
 **Unequip everything on Isaac**, and make sure each character's PP is either full or less than 7.  Also make sure nobody's stackable items exceed 2.  To test if you're in the right spot, you may save, then run Down.  If you're off by 1-2 tiles, you'll pop out on a vine within a second.
 
