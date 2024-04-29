@@ -1,6 +1,6 @@
-# ACE Setup For Golden Sun 1:
-This guide is geared towards simplicity (speed is a secondary priority), and should enable you to activate Arbitrary Code Execution even if you've never played the game before.  It should (hopefully) work for all localizations and consoles.  To summarize the entire route:
-1. Use custom names  
+# ACE Setup For Golden Sun 1
+This guide is geared towards simplicity (speed is a secondary priority), and should enable you to activate Arbitrary Code Execution even if you've never played the game before.  It should (hopefully) work for all localizations and consoles.  Summarizing the entire route, you will:
+1. **Use custom names**  
 ```
   Isaac  |N=X
   Garet  H!.W
@@ -10,13 +10,13 @@ This guide is geared towards simplicity (speed is a secondary priority), and sho
   Jenna  xx"Y
   Sheba  ((_T
 ```
-2. set specific prologue flags (talk to neighbor, tell injured man he'll live, trigger only the last boulder)
-3. activate slot 8 (in Tret, stand on 0200053C with defense values of 53, 55, 56, and 57, shifting a player each time)
-4. use slot 8 on the ACE tile (open menu on 0200846C, then step on the nearest leaf after clearing Isaac's inventory)
+2. **Set specific prologue flags**
+3. **Activate the slot 8 glitch**
+4. **Use slot 8 on the ACE tile**
 
 There's nothing else you really have to do.  Most of this guide is just setup for those 4 steps.
 
-###### For those familiar with memory editing: Step 2 does nothing but write `FFA8` at `02000146`.  Step 3 just writes `FF` at `02000040`.  You can skip to [Getting to the ACE Tile](#getting-to-the-ace-tile) so long as you edit the names and flags from steps 1-3 before activating ACE.
+###### For those familiar with memory editing: Step 2 does nothing but write `0xFFA8` at `02000146` (talk to neighbor, tell injured man he'll live, trigger only the last boulder).  Step 3 just writes `0xFF` at `02000040` (in Tret, stand on 0200053C with defense values of 53, 55, 56, and 57, shifting a player each time).  You can skip to [Getting to the ACE Tile](#getting-to-the-ace-tile) so long as you edit the names and flags from steps 1-3 before activating ACE.  Step 4 is just: open menu on 0200846C, then step on the nearest leaf after clearing Isaac's inventory.
 
 ## The Route
 ![path](gs1_ace_images/ace_setup.png)
