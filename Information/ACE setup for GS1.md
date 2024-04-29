@@ -106,7 +106,7 @@ Solve the log puzzles, and continue running from everything.  Keep everyone topp
 4. Leave the lobby, then continue on your Tret file.
 
 ## Out of Bounds
-You should now be "out-of-bounds".  You will need to listen for the "bass-notes" in the music for some instructions.  In Tret, they are evenly spaced about 1 second apart (63 frames, or 1.05 seconds to be precise), and are easy to hear.  You can also just use a stopwatch if you prefer.
+You should now be "out-of-bounds".  You will need to listen for the "bass-notes" in the music for some instructions.  In Tret, they are evenly spaced about 1 second apart (63 frames, or 1.05 seconds to be precise), and are easy to hear.  You can also just use a stopwatch if you prefer.  Wherever you see the words "at least" with regards to movement, it means there is a wall that prevents you from running too far.
 
 While running around, you might get some "bad" encounters.  Most encounters you can simply run from and continue, but some encounters are "bad" because they impact the out of bounds landscape.  
 
@@ -121,15 +121,15 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 
 2. Run Up + Left for at least 23 total bass notes.  Then run Right for at least 1 bass note.  Heal your party as you go.
 
-3. **Drain your PP to 6 or less** (so that it doesn't teleport you when you run across it), save, and hard reset.  If it has been a while since your last encounter, you can wiggle left and right until you get one before saving.
+3. **Drain your PP to 6 or less** (so that it doesn't teleport you when you run across it), save, and hard reset.
 
-4. Run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset (soft or hard) and try again.  If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.
+4. Run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset (soft or hard) and try again.  If you get an encounter within 2 bass notes, and pop out somewhere else, you can reload the save, wiggle left and right to get an encounter, then run all the way the right, and save again.  If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.
 
 5. **Unequip** the Turtle Boots on Garet but leave them in his 12th item slot (creating a wall beneath you).  Then run straight down at least half a bass note.
 
 6. Give the Turtle Boots to Isaac, but don't equip them yet.  Double-check that only the **Wooden Cap, Fur Coat, and Bronze Shield** are equipped on Isaac.  Put Flint on Isaac if he isn't already.  Go through everybody's inventory and make sure that none of the stackable items have 3 or more.  If they do, redistribute or drop them.
 
-7. Step to the right.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.  You are now standing on Isaac's Defense stat.
+7. Step to the right.  You are now standing on Isaac's Defense stat.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.
 
 8. Equip the Leather Gloves, close all menus, then shift the player in slot 1.
 9. Equip the Turtle Boots, close all menus, then shift the player in slot 1.
@@ -150,7 +150,7 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 (the brown `F3` is the barrel, and the yellow `30` is the ACE tile)
 6. Move left until you see a vertical line on the left edge of the screen.  Position it 0-1 pixels from the left edge.  
 ![position3](gs1_ace_images/position3.png)  
-7. **Walk** left for **exactly** 1 beat
+7. **Walk** left (don't run) for **exactly** 1 beat
 
 **Unequip everything on Isaac**, and make sure each character's PP is either full or less than 7.  Also make sure nobody's stackable items exceed 2.  To test if you're in the right spot, you may save, then run Down.  If you're off by 1-2 tiles, you'll pop out on a vine within a second.
 
