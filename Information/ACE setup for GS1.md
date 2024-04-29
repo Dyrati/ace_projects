@@ -90,9 +90,12 @@ Immediately after the battle (before moving), **use the hard nut on Isaac**.  He
 Cross the bridge to the north-east, run west to this cluster of trees, and press "A" to pick up the turtle boots.  
 ![turtle_boots](gs1_ace_images/turtle_boots_forest.png)  
 
-**Put the Turtle Boots in Garet's 12th item slot, and equip it.**  Then, run to Kolima Forest.
+Put the Turtle Boots in Garet's 12th item slot, and **equip it**.  Then, run to Kolima Forest.
 
-Solve the log puzzles, and continue running from everything.  Keep everyone topped up on HP, but don't worry too much if someone dies.  When you get to the floodgate room, **collect the Fur Coat from the chest, and equip it on Isaac** (it is possible to grab the coat from the other side of the log with some finagling).  Finish the room, and enter Tret.
+Solve the log puzzles, and continue running from everything.  Keep everyone topped up on HP, but don't worry too much if someone dies.  
+
+When you get to the floodgate room, **collect the Fur Coat from the chest, and equip it on Isaac** (it is possible to grab the coat from the other side of the log if facing west-northwest; solve the puzzle normally if you can't get it that way).  Finish the room, and enter Tret.  
+![fur_coat](gs1_ace_images/fur_coat.png)
 
 ## Tret
 ![tret1](gs1_ace_images/tret1.png)  
@@ -117,40 +120,45 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 ## Slot 8
 ![tret2](gs1_ace_images/tret2.png)  
 
-1. Run Up + Right until you see Isaac, then run into the corner shown in the image
+1. Run Up + Right until you see Isaac, then run around into the corner shown in the image above.  (The hitbox of the corner doesn't quite match the visual, but you'll see Isaac nestle into that spot when holding Down + Left.)
 
-2. Run Up + Left for at least 23 total bass notes.  Then run Right for at least 1 bass note.  Heal your party as you go.
+2. Run Up + Left for at least 23 total bass notes.  Heal your party as you go.  At the end, if you think you're close to getting an encounter, wiggle left and right until you get one.  You should wind up in the corner shown below.  The fast moving numbers are the "RNG river".  
+![river](gs1_ace_images/river.gif)  
 
-3. **Drain your PP to 6 or less** (so that it doesn't teleport you when you run across it), save, and hard reset.  If it has been a while since your last encounter, you can wiggle left and right until you get one before saving.
+3. Run Right for at least 1 bass note, **drain your PP to 6 or less** (so that it doesn't teleport you when you run across it), save, and hard reset.
 
-4. Run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset (soft or hard) and try again.  If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.
+4. Run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset (soft or hard) and try again.  If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.  
+![top_of_map](gs1_ace_images/top_of_the_map.png)  
+Isaac's Defense stat is the green `39`.  His PP is the red `03` two tiles below you.  Garet's 12th item slot is the red `03` three tiles below you.
 
-5. **Unequip** the Turtle Boots on Garet but leave them in his 12th item slot (creating a wall beneath you).  Then run straight down at least half a bass note.
+5. Drain your PP to 2.  If you can't reach 2 exactly, put Flint on Isaac and switch him to standby/set.
 
-6. Give the Turtle Boots to Isaac, but don't equip them yet.  Double-check that only the **Wooden Cap, Fur Coat, and Bronze Shield** are equipped on Isaac.  Put Flint on Isaac if he isn't already.  Go through everybody's inventory and make sure that none of the stackable items have 3 or more.  If they do, redistribute or drop them.
+6. **Unequip** the Turtle Boots on Garet but leave them in his 12th item slot (creating a wall beneath you).  Then run straight down at least half a bass note.
 
-7. Step to the right.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.  You are now standing on Isaac's Defense stat.
+7. Give the Turtle Boots to Isaac, but don't equip them yet.  Double-check that only the **Wooden Cap, Fur Coat, and Bronze Shield** are equipped on Isaac.  Go through everybody's inventory and make sure that none of the stackable items have 3 or more.  If they do, redistribute or drop them.
 
-8. Equip the Leather Gloves, close all menus, then shift the player in slot 1.
-9. Equip the Turtle Boots, close all menus, then shift the player in slot 1.
-10. Equip the Open Helm.  Save the last shift for later.
+8. Step to the right.  You are now standing on Isaac's Defense stat.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.
 
-11. Drain your PP to 2, then step left.  If you can't reach 2 exactly, standby Flint.  You should pop out here again  
+9. Equip the Leather Gloves, close all menus, then shift the player in slot 1.
+10. Equip the Turtle Boots, close all menus, then shift the player in slot 1.
+11. Equip the Open Helm.  Save the last shift for later.
+
+12. Step left.  You should pop out here again  
 ![tret_branch](gs1_ace_images/tret_branch.png)  
-12. Retreat with a hotkey again (without enough pp), save and hard reset.
+13. Retreat with a hotkey (without enough pp), save and hard reset.
 
 ## Getting to the ACE Tile
-1. In Tret out-of-bounds, run Up + Right until you see Isaac, then run to here:  
-![position2](gs1_ace_images/position2.png)  
-2. Run Up at least 8 bass notes, step Left at least 1 tile, and run Up at least 1 bass note
-3. Move left, but stop moving the moment the screen moves
+1. In Tret out-of-bounds, run Up + Right until you see Isaac, then run to this corner: ![position2](gs1_ace_images/position2.png)  
+(same corner  as last time)
+2. Run Up at least 9 bass notes
+3. Move left, but stop moving the moment the screen moves (anywhere from 1-8 pixels of screen movement is fine)
 4. Run Up for roughly 2 bass notes
 5. Press A.  If you get the text "Isaac checked the barrel", you're in the right spot.  Otherwise, move up a little and press A again.  (If your timing was perfect on the previous step, you'll be 3 tiles below the right spot.)  
 ![final_movement](gs1_ace_images/final_movement.png)  
 (the brown `F3` is the barrel, and the yellow `30` is the ACE tile)
 6. Move left until you see a vertical line on the left edge of the screen.  Position it 0-1 pixels from the left edge.  
 ![position3](gs1_ace_images/position3.png)  
-7. **Walk** left for **exactly** 1 beat
+7. **Walk left** (don't run) for **exactly** 1 beat
 
 **Unequip everything on Isaac**, and make sure each character's PP is either full or less than 7.  Also make sure nobody's stackable items exceed 2.  To test if you're in the right spot, you may save, then run Down.  If you're off by 1-2 tiles, you'll pop out on a vine within a second.
 
@@ -160,3 +168,7 @@ If you believe you're in the right spot, shift the player in slot 1 (activating 
 Open and close the A menu and step Down + Left.  The Tret cutscene should begin.  If everything went correctly, then when it completes, you should see the camera jump down, and Debug Mode should be active.
 
 To execute arbitrary code, Hold B and press Select to open the flag menu, and press L to scroll to the 6XX flag page.  Here you can input code in raw binary.  To run it, open and close the A menu again, then run Down until the Tret cutscene starts up again.  When it completes, the code will be executed.
+
+To warp to other maps, hold B and press Start.  To walk through walls, hold L.  Visit https://tcrf.net/Golden_Sun#Debug_Mode to learn about more debug mode features.
+
+![warp_menu](gs1_ace_images/warp_menu.png)
