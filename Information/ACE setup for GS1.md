@@ -123,13 +123,13 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 
 3. **Drain your PP to 6 or less** (so that it doesn't teleport you when you run across it), save, and hard reset.
 
-4. Run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset (soft or hard) and try again.  If you get an encounter within 2 bass notes, and pop out somewhere else, you can reload the save, wiggle left and right to get an encounter, then run all the way the right, and save again.  If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.
+4. Run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset and try again.  If you get an encounter within 2 bass notes, and pop out somewhere else, you can reset, visit battle mode, and wiggle left and right to get the encounter, then run right and save + hard reset. If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.
 
 5. **Unequip** the Turtle Boots on Garet but leave them in his 12th item slot (creating a wall beneath you).  Then run straight down at least half a bass note.
 
 6. Give the Turtle Boots to Isaac, but don't equip them yet.  Double-check that only the **Wooden Cap, Fur Coat, and Bronze Shield** are equipped on Isaac.  Put Flint on Isaac if he isn't already.  Go through everybody's inventory and make sure that none of the stackable items have 3 or more.  If they do, redistribute or drop them.
 
-7. Step to the right.  You are now standing on Isaac's Defense stat.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.
+7. Step right at least 1 tile.  You are now standing on Isaac's Defense stat.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.
 
 8. Equip the Leather Gloves, close all menus, then shift the player in slot 1.
 9. Equip the Turtle Boots, close all menus, then shift the player in slot 1.
