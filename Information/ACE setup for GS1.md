@@ -121,23 +121,25 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 
 2. Run Up + Left for at least 23 total bass notes.  Then run Right for at least 1 bass note.  Heal your party as you go.
 
-3. **Drain your PP to 6 or less** (so that it doesn't teleport you when you run across it), save, and hard reset.
+3. **Drain your PP to 7 or less** (so that it doesn't teleport you when you run across it), save, and hard reset.
 
-4. Run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset and try again.  If you get an encounter within 2 bass notes, and pop out somewhere else, you can reset, visit battle mode, and wiggle left and right to get the encounter, then run right and save + hard reset. If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.
+4. Immediately after loading your save, run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset and try again.  If you get an encounter within 2 bass notes, and pop out somewhere else, you can reset, visit battle mode, and wiggle left and right to get the encounter, then run right and save. If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.
 
-5. **Unequip** the Turtle Boots on Garet but leave them in his 12th item slot (creating a wall beneath you).  Then run straight down at least half a bass note.
+5. Drain your PP to 2.  If you can't reach 2 exactly, put Flint on Isaac and switch standby/set.
 
-6. Give the Turtle Boots to Isaac, but don't equip them yet.  Double-check that only the **Wooden Cap, Fur Coat, and Bronze Shield** are equipped on Isaac.  Put Flint on Isaac if he isn't already.  Go through everybody's inventory and make sure that none of the stackable items have 3 or more.  If they do, redistribute or drop them.
+6. **Unequip** the Turtle Boots on Garet but leave them in his 12th item slot (creating a wall beneath you).  Then run straight down at least half a bass note.
 
-7. Step right at least 1 tile.  You are now standing on Isaac's Defense stat.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.
+7. Give the Turtle Boots to Isaac, but don't equip them yet.  Double-check that only the **Wooden Cap, Fur Coat, and Bronze Shield** are equipped on Isaac.  Go through everybody's inventory and make sure that none of the stackable items have 3 or more.  If they do, redistribute or drop them.
 
-8. Equip the Leather Gloves, close all menus, then shift the player in slot 1.
-9. Equip the Turtle Boots, close all menus, then shift the player in slot 1.
-10. Equip the Open Helm.  Save the last shift for later.
+8. Step right at least 1 tile.  You are now standing on Isaac's Defense stat.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.
 
-11. Drain your PP to 2, then step left.  If you can't reach 2 exactly, standby Flint.  You should pop out here again  
+9. Equip the Leather Gloves, close all menus, then shift the player in slot 1.
+10. Equip the Turtle Boots, close all menus, then shift the player in slot 1.
+11. Equip the Open Helm.  Save the last shift for later.
+
+12. Step left.  You should pop out here again  
 ![tret_branch](gs1_ace_images/tret_branch.png)  
-12. Retreat with a hotkey again (without enough pp), save and hard reset.
+13. Retreat with a hotkey again (without enough pp), save and hard reset.
 
 ## Getting to the ACE Tile
 1. In Tret out-of-bounds, run Up + Right until you see Isaac, then run to here:  
