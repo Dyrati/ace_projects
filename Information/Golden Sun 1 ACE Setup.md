@@ -16,7 +16,7 @@ This guide is geared towards simplicity (speed is a secondary priority), and sho
 
 There's nothing else you really have to do.  Most of this guide is just setup for those 4 steps.
 
-###### For those familiar with memory editing: Step 2 does nothing but write `0xFFA8` at `02000146` (talk to neighbor, tell injured man he'll live, trigger only the last boulder).  Step 3 just writes `0xFF` at `02000040` (in Tret, stand on 0200053C with defense values of 53, 55, 56, and 57, shifting a player each time).  You can skip to [Getting to the ACE Tile](#getting-to-the-ace-tile) so long as you edit the names and flags from steps 1-3 before activating ACE.  Step 4 is just: open menu on 0200846C, then step on the nearest leaf after clearing Isaac's inventory.
+###### For those familiar with memory editing: Step 2 does nothing but write `0xFFA8` at `02000146` (talk to neighbor, tell injured man he'll live, trigger only the last boulder).  Step 3 just writes `0xFF` at `02000040` (in Tret, stand on 0200053C with defense values of 53, 55, 56, and 57, shifting a player each time).  You can skip to [Getting to the ACE Tile](#getting-to-the-ace-tile) so long as you edit in the names (ASCII) and flags from steps 1-3 before activating ACE.  Step 4 is just: open menu on 0200846C, then step on the nearest leaf after clearing Isaac's inventory.
 
 ## The Route
 ![path](gs1_ace_images/ace_setup.png)
@@ -71,7 +71,7 @@ Leave Vault, and head east.  Follow the path to Goma Cave.  After casting Move o
 3. Run Up until you pop out of a door (takes about 11 seconds), then follow the path out of the cave
 
 ## Bilibin
-Enter the weapons shop in Bilibin, and talk to the armor vendor.  Sell things until you have at least 1300 coins (water of life gives 2250).  Purchase the following items from the armor vendor: **Bronze Shield, Leather Gloves, Open Helm, Wooden Cap**.
+Enter the weapons shop in Bilibin, and talk to the armor vendor.  Sell things until you have at least 1300 coins (water of life gives 2250).  Purchase the following items from the armor vendor: **Bronze Shield, Leather Gloves, Open Helm, Wooden Cap**.  Equip all but the Open Helm on Isaac.  Don't keep the game tickets.
 
 Enter the house to the left of the weapons shop, and **collect the hard nut** in the barrel at the top.  Don't use it yet.
 
@@ -85,14 +85,14 @@ then hold **B + Right** until you get an encounter.  You should see a Dirge and 
 
 ![encounter](gs1_ace_images/encounter.png)
 
-Immediately after the battle (before moving), **use the hard nut on Isaac**.  He should have 17 defense when nothing is equipped.  Equip the Bronze Shield and Wooden Cap on Isaac.  You can give Flint to Ivan to help keep him alive.
+Immediately after the battle (before moving), **use the hard nut on Isaac**.  He should gain 4 defense.
 
 Cross the bridge to the north-east, run west to this cluster of trees, and press "A" to pick up the turtle boots.  
 ![turtle_boots](gs1_ace_images/turtle_boots_forest.png)  
 
 Put the Turtle Boots in Garet's 12th item slot, and **equip it**.  Then, run to Kolima Forest.
 
-Solve the log puzzles, and continue running from everything.  Keep everyone topped up on HP, but don't worry too much if someone dies.  
+Solve the log puzzles, and continue running from everything.  Keep everyone topped up on HP, but don't worry too much if someone dies.  Isaac will likely have enough defense to survive on his own.
 
 When you get to the floodgate room, **collect the Fur Coat from the chest, and equip it on Isaac** (it is possible to grab the coat from the other side of the log if facing west-northwest; solve the puzzle normally if you can't get it that way).  Finish the room, and enter Tret.  
 ![fur_coat](gs1_ace_images/fur_coat.png)
@@ -109,13 +109,13 @@ When you get to the floodgate room, **collect the Fur Coat from the chest, and e
 4. Leave the lobby, then continue on your Tret file.
 
 ## Out of Bounds
-You should now be "out-of-bounds".  You will need to listen for the "bass-notes" in the music for some instructions.  In Tret, they are evenly spaced about 1 second apart (63 frames, or 1.05 seconds to be precise), and are easy to hear.  You can also just use a stopwatch if you prefer.  Wherever you see the words "at least" with regards to movement, it means there is a wall that prevents you from running too far.
+You should now be "out-of-bounds".  Wherever you see the words "at least" with regards to movement, it means there is a wall that prevents you from running too far.  You may make safety saves anywhere, because this route doesn't need to keep track of previous saves.  However if you loaded battle mode on your previous reset, do that again when loading your save.
+
+You will need to listen for the "bass-notes" in the music for some instructions.  In Tret, they are evenly spaced about 1 second apart (63 frames, or 1.05 seconds to be precise), and are easy to hear.  You can also just use a stopwatch if you prefer.  
 
 While running around, you might get some "bad" encounters.  Most encounters you can simply run from and continue, but some encounters are "bad" because they impact the out of bounds landscape.  
 
-To recognize bad encounters, you will need to count the number of enemy slots used.  Every big enemy (Creeper, Rat Soldier, Troll) uses 2 slots, and every small enemy (Drone Bee, Gnome, Rat, Spider) uses 1 slot.  An encounter is only bad if it uses 6 slots, and the enemy on the far right is small.  
-
-If you get a bad encounter: save, hard reset, then continue wherever you left off.  If you entered battle mode on your previous reset, do that again.
+To recognize bad encounters, you will need to count the number of enemy slots used.  Every big enemy (Creeper, Rat Soldier, Troll) uses 2 slots, and every small enemy (Drone Bee, Gnome, Rat, Spider) uses 1 slot.  An encounter is only bad if it uses 6 slots, and the enemy on the far right is small.  If you get a bad encounter: save, hard reset, then continue wherever you left off.  If you entered battle mode on your previous reset, do that again.
 
 ## Slot 8
 ![tret2](gs1_ace_images/tret2.png)  
@@ -127,15 +127,17 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 
 3. Run Right for at least 1 bass note, **drain your PP to 6 or less** (so that it doesn't teleport you when you run across it), save, and hard reset.
 
-4. Immediately after loading your save, run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset and try again.  If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.
+4. Immediately after loading your save, run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset and try again.  If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.  
+![top_of_map](gs1_ace_images/top_of_the_map.png)  
+In the image, the green `39` is Isaac's defense stat.  The red `03` two tiles below you is Isaac's PP.  The red `03` three tiles below you is Garet's 12th item slot.
 
-5. Drain your PP to 2.  If you can't reach 2 exactly, put Flint on Isaac and switch standby/set.
+5. Drain your PP to 2.  If you can't reach 2 exactly, standby Flint.
 
 6. **Unequip** the Turtle Boots on Garet but leave them in his 12th item slot (creating a wall beneath you).  Then run straight down at least half a bass note.
 
-7. Give the Turtle Boots to Isaac, but don't equip them yet.  Double-check that only the **Wooden Cap, Fur Coat, and Bronze Shield** are equipped on Isaac.  Go through everybody's inventory and make sure that none of the stackable items have 3 or more.  If they do, redistribute or drop them.
+7. Give the Turtle Boots to Isaac, but don't equip them yet.  Double-check that only the **Wooden Cap, Fur Coat, and Bronze Shield** are equipped on Isaac.  His defense should be 57.  Go through everybody's inventory and make sure that none of the stackable items have 3 or more.  If they do, redistribute or drop them.
 
-8. Step right at least 1 tile.  You are now standing on Isaac's Defense stat.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.
+8. Step right at least 1 tile.  You should now be standing on Isaac's Defense stat.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.
 
 9. Equip the Leather Gloves, close all menus, then shift the player in slot 1.
 10. Equip the Turtle Boots, close all menus, then shift the player in slot 1.
@@ -146,8 +148,8 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 13. Retreat with a hotkey (without enough pp), save and hard reset.
 
 ## Getting to the ACE Tile
-1. In Tret out-of-bounds, run Up + Right until you see Isaac, then run to this corner: ![position2](gs1_ace_images/position2.png)  
-(same corner  as last time)
+1. In Tret out-of-bounds, run Up + Right until you see Isaac, then run to this corner: (same corner  as last time)  
+![position2](gs1_ace_images/position2.png)  
 2. Run Up at least 9 bass notes
 3. Move left, but stop moving the moment the camera moves (the left edge of the screen should be somewhere within the 8-pixel-wide highlighted strip in the gif below).  
 ![alignment](gs1_ace_images/alignment.gif)
@@ -159,12 +161,10 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 ![position3](gs1_ace_images/position3.png)  
 7. **Walk left** (don't run) for **exactly** 1 beat
 
-**Unequip everything on Isaac**, and make sure each character's PP is either full or less than 7.  Also make sure nobody's stackable items exceed 2.  To test if you're in the right spot, you may save, then run Down.  If you're off by 1-2 tiles, you'll pop out on a vine within a second.
-
-If you believe you're in the right spot, shift the player in slot 1 (activating slot 8).
+You should now be on the ACE tile.  **Unequip everything on Isaac**, and make sure each character's PP is either full or less than 7.  Also make sure nobody's stackable items exceed 2.  To test if you're in the right spot, you may save, then run Down.  If you're off by 1-2 tiles, you'll pop out on a vine within a second.  If you believe you're in the right spot, shift the player in slot 1 (activating slot 8), and save.
 
 ## Activating ACE
-Open and close the A menu and step Down + Left.  The Tret cutscene should begin.  If everything went correctly, then when it completes, you should see the camera jump down, and Debug Mode should be active.
+Open and close the A menu and step Down + Left.  The Tret cutscene should begin.  If everything went correctly, then when it completes, you should see the camera jump down, and Debug Mode will be active.
 
 To execute arbitrary code, Hold B and press Select to open the flag menu, and press L to scroll to the 6XX flag page.  Here you can input code in raw binary (starting at address `02000100`).  To run it, open and close the A menu again, then run Down until the Tret cutscene starts up again.  When it completes, the code will be executed in thumb mode.
 
