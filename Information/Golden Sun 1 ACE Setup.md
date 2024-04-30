@@ -1,4 +1,4 @@
-# ACE Setup For Golden Sun 1
+# Golden Sun 1 ACE Setup
 This guide is geared towards simplicity (speed is a secondary priority), and should enable you to activate Arbitrary Code Execution even if you've never played the game before.  It should (hopefully) work for all localizations and consoles.  Summarizing the entire route, you will:
 1. **Use custom names**  
 ```
@@ -165,7 +165,7 @@ If you believe you're in the right spot, shift the player in slot 1 (activating 
 ## Activating ACE
 Open and close the A menu and step Down + Left.  The Tret cutscene should begin.  If everything went correctly, then when it completes, you should see the camera jump down, and Debug Mode should be active.
 
-To execute arbitrary code, Hold B and press Select to open the flag menu, and press L to scroll to the 6XX flag page.  Here you can input code in raw binary.  To run it, open and close the A menu again, then run Down until the Tret cutscene starts up again.  When it completes, the code will be executed.
+To execute arbitrary code, Hold B and press Select to open the flag menu, and press L to scroll to the 6XX flag page.  Here you can input code in raw binary (starting at address `02000100`).  To run it, open and close the A menu again, then run Down until the Tret cutscene starts up again.  When it completes, the code will be executed in thumb mode.
 
 To warp to other maps, hold B and press Start.  To walk through walls, hold L.  Visit https://tcrf.net/Golden_Sun#Debug_Mode to learn about more debug mode features.
 
