@@ -149,7 +149,7 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 1. In Tret out-of-bounds, run Up + Right until you see Isaac, then run to this corner: ![position2](gs1_ace_images/position2.png)  
 (same corner  as last time)
 2. Run Up at least 9 bass notes
-3. Move left, but stop moving the moment the screen moves (anywhere from 1-8 pixels of screen movement is fine)
+3. Move left until the screen starts moving. If it moved more than 8 pixels, move right a little (anywhere from 1-8 pixels of screen movement is fine).
 4. Run Up for roughly 2 bass notes
 5. Press A.  If you get the text "Isaac checked the barrel", you're in the right spot.  Otherwise, move up a little and press A again.  (If your timing was perfect on the previous step, you'll be 3 tiles below the right spot.)  
 ![final_movement](gs1_ace_images/final_movement.png)  
