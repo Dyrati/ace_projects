@@ -109,7 +109,7 @@ When you get to the floodgate room, **collect the Fur Coat from the chest, and e
 4. Leave the lobby, then continue on your Tret file.
 
 ## Out of Bounds
-You should now be "out-of-bounds".  You will need to listen for the "bass-notes" in the music for some instructions.  In Tret, they are evenly spaced about 1 second apart (63 frames, or 1.05 seconds to be precise), and are easy to hear.  You can also just use a stopwatch if you prefer.
+You should now be "out-of-bounds".  You will need to listen for the "bass-notes" in the music for some instructions.  In Tret, they are evenly spaced about 1 second apart (63 frames, or 1.05 seconds to be precise), and are easy to hear.  You can also just use a stopwatch if you prefer.  Wherever you see the words "at least" with regards to movement, it means there is a wall that prevents you from running too far.
 
 While running around, you might get some "bad" encounters.  Most encounters you can simply run from and continue, but some encounters are "bad" because they impact the out of bounds landscape.  
 
@@ -127,17 +127,15 @@ If you get a bad encounter: save, hard reset, then continue wherever you left of
 
 3. Run Right for at least 1 bass note, **drain your PP to 6 or less** (so that it doesn't teleport you when you run across it), save, and hard reset.
 
-4. Run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset (soft or hard) and try again.  If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.  
-![top_of_map](gs1_ace_images/top_of_the_map.png)  
-Isaac's Defense stat is the green `39`.  His PP is the red `03` two tiles below you.  Garet's 12th item slot is the red `03` three tiles below you.
+4. Immediately after loading your save, run Up for at least 7 bass notes (crossing the RNG river).  If you pop out somewhere else, reset and try again.  If you crossed successfully, you may press "A" to "check the jar", confirming you've reached the top of the map.
 
-5. Drain your PP to 2.  If you can't reach 2 exactly, put Flint on Isaac and switch him to standby/set.
+5. Drain your PP to 2.  If you can't reach 2 exactly, put Flint on Isaac and switch standby/set.
 
 6. **Unequip** the Turtle Boots on Garet but leave them in his 12th item slot (creating a wall beneath you).  Then run straight down at least half a bass note.
 
 7. Give the Turtle Boots to Isaac, but don't equip them yet.  Double-check that only the **Wooden Cap, Fur Coat, and Bronze Shield** are equipped on Isaac.  Go through everybody's inventory and make sure that none of the stackable items have 3 or more.  If they do, redistribute or drop them.
 
-8. Step to the right.  You are now standing on Isaac's Defense stat.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.
+8. Step right at least 1 tile.  You are now standing on Isaac's Defense stat.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.
 
 9. Equip the Leather Gloves, close all menus, then shift the player in slot 1.
 10. Equip the Turtle Boots, close all menus, then shift the player in slot 1.
