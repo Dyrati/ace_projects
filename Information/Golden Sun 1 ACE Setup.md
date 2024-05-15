@@ -87,7 +87,7 @@ then hold **B + Right** until you get an encounter.  You should see a Dirge and 
 
 Immediately after the battle (before moving), **use the hard nut on Isaac**.  He should gain 4 defense.
 
-Cross the bridge to the north-east, run west to the cluster of trees show below, and press "A" to pick up the turtle boots.  
+Cross the bridge to the north-east, run west to the cluster of trees shown below, and press "A" to pick up the turtle boots.  
 ![turtle_boots](gs1_ace_images/turtle_boots_forest.png)  
 
 Put the Turtle Boots in Garet's 12th item slot, and **equip it**.  Then, run to Kolima Forest.
