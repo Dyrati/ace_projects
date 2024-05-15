@@ -1,5 +1,5 @@
 # Golden Sun 1 ACE Setup
-This guide is geared towards simplicity (speed is a secondary priority), and should enable you to activate Arbitrary Code Execution even if you've never played the game before.  It should (hopefully) work for all localizations and consoles.  Summarizing the entire route, you will:
+This guide is geared towards simplicity (speed is a secondary priority), and should enable you to activate Arbitrary Code Execution even if you've never played the game before.  It should (hopefully) work for all localizations and platforms.  Summarizing the entire route, you will:
 1. **Use custom names**  
 ```
   Isaac  |N=X
@@ -87,7 +87,7 @@ then hold **B + Right** until you get an encounter.  You should see a Dirge and 
 
 Immediately after the battle (before moving), **use the hard nut on Isaac**.  He should gain 4 defense.
 
-Cross the bridge to the north-east, run west to this cluster of trees, and press "A" to pick up the turtle boots.  
+Cross the bridge to the north-east, run west to the cluster of trees show below, and press "A" to pick up the turtle boots.  
 ![turtle_boots](gs1_ace_images/turtle_boots_forest.png)  
 
 Put the Turtle Boots in Garet's 12th item slot, and **equip it**.  Then, run to Kolima Forest.
@@ -166,8 +166,8 @@ You should now be on the ACE tile.  **Unequip everything on Isaac**, and make su
 ## Activating ACE
 Open and close the A menu and step Down + Left.  The Tret cutscene should begin.  If everything went correctly, then when it completes, you should see the camera jump down, and Debug Mode will be active.
 
-To execute arbitrary code, Hold B and press Select to open the flag menu, and press L to scroll to the 6XX flag page.  Here you can input code in raw binary (starting at address `02000100`).  To run it, open and close the A menu again, then run Down until the Tret cutscene starts up again.  When it completes, the code will be executed in thumb mode.
-
 To warp to other maps, hold B and press Start.  To walk through walls, hold L.  Visit https://tcrf.net/Golden_Sun#Debug_Mode to learn about more debug mode features.
 
-![warp_menu](gs1_ace_images/warp_menu.png)
+To execute arbitrary code, Hold B and press Select to open the flag menu, and press L to scroll to the 6XX flag page.  Here you can input code in raw binary (starting at address `02000100`).  To run it, open and close the A menu again, then run Down until the Tret cutscene starts up again.  When it completes, the code will be executed in thumb mode.
+
+![flag_menu](gs1_ace_images/flag_menu.png)
