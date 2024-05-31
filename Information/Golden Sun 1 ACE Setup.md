@@ -22,13 +22,13 @@ There's nothing else you really have to do.  Most of this guide is just setup fo
 ![path](gs1_ace_images/ace_setup.png)
 
 ## Start a new game
-At the name-selection menu, press `↑ ↓ ↑ ↓ ← → ← → ↑ → ↓ ← ↑ select` to enable you to rename everyone.  Fully release each input before pressing the next one.  You should hear a "ding" if you did it correctly.  Use the names listed above.  These names constitute the bulk of the code to be executed by the CPU when ACE is triggered.
+Enter the name selection menu (do not fully clear the menu, because that affects the rng). Press `↑ ↓ ↑ ↓ ← → ← → ↑ → ↓ ← ↑ select` to enable you to rename everyone.  Fully release each input before pressing the next one.  You should hear a "ding" if you did it correctly.  Use the names listed above.  These names constitute the bulk of the code to be executed by the CPU when ACE is triggered.
 
 ## The Prologue
 
 ![prologue1](gs1_ace_images/prologue_1.png)
 
-When you first gain control of Isaac, **attempt to enter your neighbor's house**.  He will pop out, say a few words, then leave.  **Do NOT step on either of the staircases leading south**, because they will trigger boulders to fall, setting unwanted flags.
+When you first gain control of Isaac, ensure that his defense is 13.  **Attempt to enter your neighbor's house**.  He will pop out, say a few words, then leave.  **Do NOT step on either of the staircases leading south**, because they will trigger boulders to fall, setting unwanted flags.
 
 Head north, **ignoring Garet** struggling with his chest.  He will stop you and join your party.  Head across the bridge, and another cutscene will be triggered.  At the staircase, **head directly left** because moving down at all triggers another unwanted boulder.
 
@@ -71,7 +71,7 @@ Leave Vault, and head east.  Follow the path to Goma Cave.  After casting Move o
 3. Run Up until you pop out of a door (takes about 11 seconds), then follow the path out of the cave
 
 ## Bilibin
-Enter the weapons shop in Bilibin, and talk to the armor vendor.  Sell things until you have at least 1300 coins (water of life gives 2250).  Purchase the following items from the armor vendor: **Bronze Shield, Leather Gloves, Open Helm, Wooden Cap**.  Equip all but the Open Helm on Isaac.  Don't keep the game tickets.
+Enter the weapons shop in Bilibin, and talk to the armor vendor.  Sell things until you have at least 1300 coins (water of life gives 2250).  Purchase the following items from the armor vendor: **Bronze Shield, Leather Gloves, Open Helm, Wooden Cap**.  You may equip any items on Isaac.  Don't keep the game tickets.
 
 Enter the house to the left of the weapons shop, and **collect the hard nut** in the barrel at the top.  Don't use it yet.
 
@@ -85,7 +85,7 @@ then hold **B + Right** until you get an encounter.  You should see a Dirge and 
 
 ![encounter](gs1_ace_images/encounter.png)
 
-Immediately after the battle (before moving), **use the hard nut on Isaac**.  He should gain 4 defense.
+Immediately after the battle (before moving), **use the hard nut on Isaac**.  He should gain 4 defense.  With nothing equipped, he should have 17 defense.
 
 Cross the bridge to the north-east, run west to the cluster of trees shown below, and press "A" to pick up the turtle boots.  
 ![turtle_boots](gs1_ace_images/turtle_boots_forest.png)  
@@ -135,7 +135,7 @@ In the image, the green `39` is Isaac's defense stat.  The red `03` two tiles be
 
 6. **Unequip** the Turtle Boots on Garet but leave them in his 12th item slot (creating a wall beneath you).  Then run straight down at least half a bass note.
 
-7. Give the Turtle Boots to Isaac, but don't equip them yet.  Double-check that only the **Wooden Cap, Fur Coat, and Bronze Shield** are equipped on Isaac.  His defense should be 57.  Go through everybody's inventory and make sure that none of the stackable items have 3 or more.  If they do, redistribute or drop them.
+7. Give the Turtle Boots to Isaac, but don't equip them yet.  Ensure that only the **Wooden Cap, Fur Coat, and Bronze Shield** are equipped on Isaac.  His defense should be 57.  Go through everybody's inventory and make sure that none of the stackable items have 3 or more.  If they do, redistribute or drop them.
 
 8. Step right at least 1 tile.  You should now be standing on Isaac's Defense stat.  Open your status menu, and press R once to shift the player in slot 1.  You should see that your party is corrupted.  Your cursor in the item menu might disappear, but it still functions normally.
 
